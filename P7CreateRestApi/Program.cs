@@ -1,6 +1,7 @@
 using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Repositories;
 using Microsoft.EntityFrameworkCore;
+using P7CreateRestApi;
 using P7CreateRestApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.SeedDatabase();
+
     app.UseSwagger();
     app.UseSwaggerUI();
 }
