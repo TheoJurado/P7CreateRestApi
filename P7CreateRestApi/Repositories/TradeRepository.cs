@@ -1,0 +1,42 @@
+﻿using Dot.Net.WebApi.Data;
+using Dot.Net.WebApi.Domain;
+using Microsoft.EntityFrameworkCore;
+using P7CreateRestApi.Repositories;
+
+namespace Dot.Net.WebApi.Repositories
+{
+    public class TradeRepository : ITradeRepository
+    {
+        public LocalDbContext DbContext { get; }
+
+        public TradeRepository(LocalDbContext dbContext)
+        {
+            DbContext = dbContext;
+        }
+
+        public Trade FindByName(string tradeName)
+        {
+            return DbContext.Trades.Where(trade => trade.DealName == tradeName)
+                                  .FirstOrDefault();
+        }
+
+        public async Task<List<Trade>> FindAll()
+        {
+            return await DbContext.Trades.ToListAsync();
+        }
+
+        public void Add(Trade trade)
+        {
+            DbContext.Trades.Add(trade);
+        }
+
+        public Trade FindById(int id)
+        {
+            Trade trade = DbContext.Trades.Find(id);
+            if (trade == null)
+                return null;
+            else
+                return trade;
+        }
+    }
+}

@@ -27,11 +27,16 @@ namespace Dot.Net.WebApi.Repositories
 
         public void Add(User user)
         {
+            DbContext.Users.Add(user);
         }
 
         public User FindById(int id)
         {
-            return null;
+            User user = DbContext.Users.Find(id);
+            if (user == null)
+                return null;
+            else
+                return user;
         }
     }
 }
