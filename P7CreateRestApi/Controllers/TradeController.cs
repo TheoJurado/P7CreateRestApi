@@ -1,4 +1,6 @@
 using Dot.Net.WebApi.Domain;
+using Dot.Net.WebApi.Repositories;
+using P7CreateRestApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dot.Net.WebApi.Controllers
@@ -7,29 +9,53 @@ namespace Dot.Net.WebApi.Controllers
     [Route("[controller]")]
     public class TradeController : ControllerBase
     {
-        // TODO: Inject Trade service
+        private ITradeRepository _tradeRepository;
+
+        public TradeController(ITradeRepository tradeRepository)
+        {
+            _tradeRepository = tradeRepository;
+        }
 
         [HttpGet]
         [Route("list")]
         public IActionResult Home()
         {
             // TODO: find all Trade, add to model
-            return Ok();
+            var trades = _tradeRepository.FindAll();
+
+            return Ok(trades);
         }
 
         [HttpGet]
         [Route("add")]
         public IActionResult AddTrade([FromBody]Trade trade)
         {
-            return Ok();
+            if (trade == null)
+            {
+                return BadRequest("Les informations sont invalides.");
+            }
+            else
+            {
+                _tradeRepository.Add(trade);
+                return Ok();
+            }
         }
 
         [HttpGet]
         [Route("validate")]
         public IActionResult Validate([FromBody]Trade trade)
-        {
+        {//???
             // TODO: check data valid and save to db, after saving return Trade list
-            return Ok();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            _tradeRepository.Add(trade);
+
+            var trades = _tradeRepository.FindAll();
+
+            return Ok(trades);
         }
 
         [HttpGet]

@@ -37,13 +37,13 @@ namespace P7CreateRestApi
                 context.Database.Migrate();
 
                 // Log the completion of the database migration.
-                logger.LogInformation("Database migration completed.");// Starting database seeding...
+                logger.LogInformation("Database migration completed. Starting database seeding...");
 
                 // Initialize and seed the database with default data.
-                //SeedData.Initialize(services);
+                SeedData.Initialize(services);
 
                 // Log the successful completion of database seeding.
-                //logger.LogInformation("Database seeding completed successfully.");
+                logger.LogInformation("Database seeding completed successfully.");
             }
             catch (DbUpdateException dbEx)
             {
