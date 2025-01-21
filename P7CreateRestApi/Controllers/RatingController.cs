@@ -28,7 +28,7 @@ namespace Dot.Net.WebApi.Controllers
             return Ok(rates);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("add")]
         public IActionResult AddRatingForm([FromBody]Rating rating)
         {
@@ -43,7 +43,7 @@ namespace Dot.Net.WebApi.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("validate")]
         public IActionResult Validate([FromBody]Rating rating)
         {

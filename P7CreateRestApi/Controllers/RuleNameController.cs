@@ -27,7 +27,7 @@ namespace Dot.Net.WebApi.Controllers
             return Ok(rules);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("add")]
         public IActionResult AddRuleName([FromBody]RuleName rule)
         {
@@ -42,7 +42,7 @@ namespace Dot.Net.WebApi.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("validate")]
         public IActionResult Validate([FromBody]RuleName rule)
         {

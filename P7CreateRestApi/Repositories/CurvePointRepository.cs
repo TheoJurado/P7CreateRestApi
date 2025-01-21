@@ -24,6 +24,7 @@ namespace Dot.Net.WebApi.Repositories
 
         public async Task<List<CurvePoint>> FindAll()
         {
+            int number = DbContext.Curves.Count();
             return await DbContext.Curves.ToListAsync();
         }
 
@@ -39,6 +40,24 @@ namespace Dot.Net.WebApi.Repositories
                 return null;
             else
                 return curvePoint;
+        }
+        public void Update(int id, CurvePoint curve)
+        {
+            var curveResearch = DbContext.Curves.Find(id);
+            if (curveResearch == null)
+                return;
+            if (curve.Id != id)
+                return;
+
+            curveResearch = curve;
+            DbContext.Curves.Update(curveResearch);
+        }
+        public void Delete(int id)
+        {
+            var curveResearch = DbContext.Curves.Find(id);
+            if (curveResearch == null)
+                return;
+            DbContext.Remove(curveResearch);
         }
     }
 }

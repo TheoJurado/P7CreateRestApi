@@ -10,5 +10,7 @@ namespace P7CreateRestApi.Repositories
         Task<List<BidList>> FindAll();
         void Add(BidList bidList);
         BidList FindById(int id);
+        public void Update(int id, BidList bid);
+        public void Delete(int id);
     }
 }

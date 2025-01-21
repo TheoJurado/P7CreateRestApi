@@ -26,7 +26,7 @@ namespace Dot.Net.WebApi.Controllers
             return Ok(trades);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("add")]
         public IActionResult AddTrade([FromBody]Trade trade)
         {
@@ -41,7 +41,7 @@ namespace Dot.Net.WebApi.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("validate")]
         public IActionResult Validate([FromBody]Trade trade)
         {//???

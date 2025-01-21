@@ -3,6 +3,7 @@ using Dot.Net.WebApi.Repositories;
 using P7CreateRestApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace Dot.Net.WebApi.Controllers
 {
@@ -41,20 +42,20 @@ namespace Dot.Net.WebApi.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("validate")]
         public IActionResult Validate([FromBody]User user)
-        {//??? comme trade ?
+        {
             if (!ModelState.IsValid)
             {
                 return BadRequest("Model invalide");
             }
-           
-            //_userRepository.Add(user);
 
+            _userRepository.Add(user);
 
+            var users = _userRepository.FindAll();
 
-            return Ok();
+            return Ok(users);
         }
 
         [HttpGet]
