@@ -3,6 +3,7 @@ using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Domain;
 using Microsoft.EntityFrameworkCore;
 using P7CreateRestApi.Repositories;
+using System.Data;
 
 
 namespace Dot.Net.WebApi.Repositories
@@ -39,6 +40,25 @@ namespace Dot.Net.WebApi.Repositories
                 return null;
             else
                 return ruleName;
+        }
+
+        public void Update(int id, RuleName ruleName)
+        {
+            var ruleResearch = DbContext.RuleNames.Find(id);
+            if (ruleResearch == null)
+                return;
+            if (ruleName.Id != id)
+                return;
+
+            ruleResearch = ruleName;
+            DbContext.RuleNames.Update(ruleResearch);
+        }
+        public void Delete(int id)
+        {
+            var ruleResearch = DbContext.RuleNames.Find(id);
+            if (ruleResearch == null)
+                return;
+            DbContext.Remove(ruleResearch);
         }
     }
 }

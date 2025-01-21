@@ -38,5 +38,24 @@ namespace Dot.Net.WebApi.Repositories
             else
                 return trade;
         }
+
+        public void Update(int id, Trade trade)
+        {
+            Trade? tradeResearch = DbContext.Trades.Find(id);
+            if (tradeResearch == null)
+                return;
+            if (trade.TradeId != id)
+                return;
+
+            tradeResearch = trade;
+            DbContext.Trades.Update(tradeResearch);
+        }
+        public void Delete(int id)
+        {
+            Trade? tradeResearch = DbContext.Trades.Find(id);
+            if (tradeResearch == null)
+                return;
+            DbContext.Remove(tradeResearch);
+        }
     }
 }

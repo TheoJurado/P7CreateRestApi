@@ -48,7 +48,7 @@ namespace Dot.Net.WebApi.Controllers
             // TODO: check data valid and save to db, after saving return Trade list
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest("Model invalide");
             }
 
             _tradeRepository.Add(trade);
@@ -63,7 +63,11 @@ namespace Dot.Net.WebApi.Controllers
         public IActionResult ShowUpdateForm(int id)
         {
             // TODO: get Trade by Id and to model then show to the form
-            return Ok();
+            var trade = _tradeRepository.FindById(id);
+            if (trade == null)
+                return BadRequest("Invalid Id:" + id);
+
+            return Ok(trade);
         }
 
         [HttpPost]
@@ -71,7 +75,17 @@ namespace Dot.Net.WebApi.Controllers
         public IActionResult UpdateTrade(int id, [FromBody] Trade trade)
         {
             // TODO: check required fields, if valid call service to update Trade and return Trade list
-            return Ok();
+            var tradeResearch = _tradeRepository.FindById(id);
+            if (tradeResearch == null)
+                return BadRequest("L'ID est invalide.");
+            if (trade.TradeId != id)
+                return BadRequest("Les informations sont invalides.");
+
+            _tradeRepository.Update(id, trade);
+
+            var trades = _tradeRepository.FindAll();
+
+            return Ok(trades);
         }
 
         [HttpDelete]
@@ -79,7 +93,15 @@ namespace Dot.Net.WebApi.Controllers
         public IActionResult DeleteTrade(int id)
         {
             // TODO: Find Trade by Id and delete the Trade, return to Trade list
-            return Ok();
+            var tradeResearch = _tradeRepository.FindById(id);
+            if (tradeResearch == null)
+                return BadRequest("L'ID est invalide.");
+
+            _tradeRepository.Delete(id);
+
+            var trades = _tradeRepository.FindAll();
+
+            return Ok(trades);
         }
     }
 }

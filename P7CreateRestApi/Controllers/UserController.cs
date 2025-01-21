@@ -23,7 +23,7 @@ namespace Dot.Net.WebApi.Controllers
         {
             var users = _userRepository.FindAll();
 
-            return Ok();
+            return Ok(users);
         }
 
         [HttpPost]
@@ -47,7 +47,7 @@ namespace Dot.Net.WebApi.Controllers
         {//??? comme trade ?
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest("Model invalide");
             }
            
             //_userRepository.Add(user);
@@ -61,12 +61,12 @@ namespace Dot.Net.WebApi.Controllers
         [Route("update/{id}")]
         public IActionResult ShowUpdateForm(int id)
         {//???
-            User user = _userRepository.FindById(id);
+            User? user = _userRepository.FindById(id);
             
             if (user == null)
                 throw new ArgumentException("Invalid user Id:" + id);
 
-            return Ok();
+            return Ok(user);
         }
 
         [HttpPost]
@@ -81,7 +81,9 @@ namespace Dot.Net.WebApi.Controllers
 
             _userRepository.Update(id, user);
 
-            return Ok();
+            var users = _userRepository.FindAll();
+
+            return Ok(users);
         }
 
         [HttpDelete]
@@ -94,7 +96,9 @@ namespace Dot.Net.WebApi.Controllers
 
             _userRepository.Delete(id);
 
-            return Ok();
+            var users = _userRepository.FindAll();
+
+            return Ok(users);
         }
 
         [HttpGet]

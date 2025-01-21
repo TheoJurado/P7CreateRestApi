@@ -40,5 +40,24 @@ namespace Dot.Net.WebApi.Repositories
             else
                 return rating;
         }
+
+        public void Update(int id, Rating rating)
+        {
+            var ratingResearch = DbContext.Ratings.Find(id);
+            if (ratingResearch == null)
+                return;
+            if (rating.Id != id)
+                return;
+
+            ratingResearch = rating;
+            DbContext.Ratings.Update(ratingResearch);
+        }
+        public void Delete(int id)
+        {
+            var ratingResearch = DbContext.Ratings.Find(id);
+            if (ratingResearch == null)
+                return;
+            DbContext.Remove(ratingResearch);
+        }
     }
 }

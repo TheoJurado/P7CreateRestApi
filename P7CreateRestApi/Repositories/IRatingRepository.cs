@@ -9,5 +9,7 @@ namespace P7CreateRestApi.Repositories
         Task<List<Rating>> FindAll();
         void Add(Rating rating);
         Rating FindById(int id);
+        public void Update(int id, Rating rating);
+        public void Delete(int id);
     }
 }
