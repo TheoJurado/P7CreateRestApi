@@ -20,10 +20,10 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
             // TODO: find all Rating, add to model
-            var rates = _ratingRepository.FindAll();
+            var rates = await _ratingRepository.FindAll();
 
             return Ok(rates);
         }
@@ -45,7 +45,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]Rating rating)
+        public async Task<IActionResult> Validate([FromBody]Rating rating)
         {
             // TODO: check data valid and save to db, after saving return Rating list
             if (!ModelState.IsValid)
@@ -55,7 +55,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _ratingRepository.Add(rating);
 
-            var rates = _ratingRepository.FindAll();
+            var rates = await _ratingRepository.FindAll();
 
             return Ok(rates);
         }
@@ -74,7 +74,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateRating(int id, [FromBody] Rating rating)
+        public async Task<IActionResult> UpdateRating(int id, [FromBody] Rating rating)
         {
             // TODO: check required fields, if valid call service to update Rating and return Rating list
             var rateResearch = _ratingRepository.FindById(id);
@@ -85,14 +85,14 @@ namespace Dot.Net.WebApi.Controllers
 
             _ratingRepository.Update(id, rating);
 
-            var rates = _ratingRepository.FindAll();
+            var rates = await _ratingRepository.FindAll();
 
             return Ok(rates);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteRating(int id)
+        public async Task<IActionResult> DeleteRating(int id)
         {
             // TODO: Find Rating by Id and delete the Rating, return to Rating list
             var rateResearch = _ratingRepository.FindById(id);
@@ -101,7 +101,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _ratingRepository.Delete(id);
 
-            var rates = _ratingRepository.FindAll();
+            var rates = await _ratingRepository.FindAll();
 
             return Ok(rates);
         }

@@ -20,9 +20,9 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
-            var users = _userRepository.FindAll();
+            var users = await _userRepository.FindAll();
 
             return Ok(users);
         }
@@ -44,7 +44,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]User user)
+        public async Task<IActionResult> Validate([FromBody]User user)
         {
             if (!ModelState.IsValid)
             {
@@ -53,7 +53,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _userRepository.Add(user);
 
-            var users = _userRepository.FindAll();
+            var users = await _userRepository.FindAll();
 
             return Ok(users);
         }
@@ -72,7 +72,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateUser(int id, [FromBody] User user)
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
         {
             User? userResearch = _userRepository.FindById(id);
             if (userResearch == null)
@@ -82,14 +82,14 @@ namespace Dot.Net.WebApi.Controllers
 
             _userRepository.Update(id, user);
 
-            var users = _userRepository.FindAll();
+            var users = await _userRepository.FindAll();
 
             return Ok(users);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteUser(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
             User? userResearch = _userRepository.FindById(id);
             if (userResearch == null)
@@ -97,7 +97,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _userRepository.Delete(id);
 
-            var users = _userRepository.FindAll();
+            var users = await _userRepository.FindAll();
 
             return Ok(users);
         }

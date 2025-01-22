@@ -19,10 +19,10 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
             // TODO: find all RuleName, add to model
-            var rules = _ruleNameRepository.FindAll();
+            var rules = await _ruleNameRepository.FindAll();
 
             return Ok(rules);
         }
@@ -44,7 +44,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]RuleName rule)
+        public async Task<IActionResult> Validate([FromBody]RuleName rule)
         {
             // TODO: check data valid and save to db, after saving return RuleName list
             if (!ModelState.IsValid)
@@ -54,7 +54,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _ruleNameRepository.Add(rule);
 
-            var rules = _ruleNameRepository.FindAll();
+            var rules = await _ruleNameRepository.FindAll();
 
             return Ok(rules);
         }
@@ -73,7 +73,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateRuleName(int id, [FromBody] RuleName rule)
+        public async Task<IActionResult> UpdateRuleName(int id, [FromBody] RuleName rule)
         {
             // TODO: check required fields, if valid call service to update RuleName and return RuleName list
             var ruleResearch = _ruleNameRepository.FindById(id);
@@ -84,14 +84,14 @@ namespace Dot.Net.WebApi.Controllers
 
             _ruleNameRepository.Update(id, rule);
 
-            var rules = _ruleNameRepository.FindAll();
+            var rules = await _ruleNameRepository.FindAll();
 
             return Ok(rules);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteRuleName(int id)
+        public async Task<IActionResult> DeleteRuleName(int id)
         {
             // TODO: Find RuleName by Id and delete the RuleName, return to Rule list
             var ruleResearch = _ruleNameRepository.FindById(id);
@@ -100,7 +100,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _ruleNameRepository.Delete(id);
 
-            var rules = _ruleNameRepository.FindAll();
+            var rules = await _ruleNameRepository.FindAll();
 
             return Ok(rules);
         }

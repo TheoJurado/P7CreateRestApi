@@ -18,10 +18,10 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
             // TODO: find all Trade, add to model
-            var trades = _tradeRepository.FindAll();
+            var trades = await _tradeRepository.FindAll();
 
             return Ok(trades);
         }
@@ -43,7 +43,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]Trade trade)
+        public async Task<IActionResult> Validate([FromBody]Trade trade)
         {//???
             // TODO: check data valid and save to db, after saving return Trade list
             if (!ModelState.IsValid)
@@ -53,7 +53,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _tradeRepository.Add(trade);
 
-            var trades = _tradeRepository.FindAll();
+            var trades = await _tradeRepository.FindAll();
 
             return Ok(trades);
         }
@@ -72,7 +72,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateTrade(int id, [FromBody] Trade trade)
+        public async Task<IActionResult> UpdateTrade(int id, [FromBody] Trade trade)
         {
             // TODO: check required fields, if valid call service to update Trade and return Trade list
             var tradeResearch = _tradeRepository.FindById(id);
@@ -83,14 +83,14 @@ namespace Dot.Net.WebApi.Controllers
 
             _tradeRepository.Update(id, trade);
 
-            var trades = _tradeRepository.FindAll();
+            var trades = await _tradeRepository.FindAll();
 
             return Ok(trades);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteTrade(int id)
+        public async Task<IActionResult> DeleteTrade(int id)
         {
             // TODO: Find Trade by Id and delete the Trade, return to Trade list
             var tradeResearch = _tradeRepository.FindById(id);
@@ -99,7 +99,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _tradeRepository.Delete(id);
 
-            var trades = _tradeRepository.FindAll();
+            var trades = await _tradeRepository.FindAll();
 
             return Ok(trades);
         }

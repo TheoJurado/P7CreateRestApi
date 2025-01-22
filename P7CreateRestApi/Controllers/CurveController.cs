@@ -20,9 +20,9 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
-            var curves = _curveRepository.FindAll();
+            var curves = await _curveRepository.FindAll();
 
             return Ok(curves);
         }
@@ -44,7 +44,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]CurvePoint curvePoint)
+        public async Task<IActionResult> Validate([FromBody]CurvePoint curvePoint)
         {
             // TODO: check data valid and save to db, after saving return bid list
             if (!ModelState.IsValid)
@@ -54,7 +54,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _curveRepository.Add(curvePoint);
 
-            var curves = _curveRepository.FindAll();
+            var curves = await _curveRepository.FindAll();
 
             return Ok(curves);
         }
@@ -73,7 +73,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateCurvePoint(int id, [FromBody] CurvePoint curvePoint)
+        public async Task<IActionResult> UpdateCurvePoint(int id, [FromBody] CurvePoint curvePoint)
         {
             // TODO: check required fields, if valid call service to update Curve and return Curve list
             var curveResearch = _curveRepository.FindById(id);
@@ -84,14 +84,14 @@ namespace Dot.Net.WebApi.Controllers
 
             _curveRepository.Update(id, curvePoint);
 
-            var curves = _curveRepository.FindAll();
+            var curves = await _curveRepository.FindAll();
 
             return Ok(curves);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteBid(int id)
+        public async Task<IActionResult> DeleteBid(int id)
         {
             // TODO: Find Curve by Id and delete the Curve, return to Curve list
             var curveResearch = _curveRepository.FindById(id);
@@ -100,7 +100,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _curveRepository.Delete(id);
 
-            var curves = _curveRepository.FindAll();
+            var curves = await _curveRepository.FindAll();
 
             return Ok(curves);
         }

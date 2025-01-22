@@ -18,7 +18,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody] BidList bidList)
+        public async Task<IActionResult> Validate([FromBody] BidList bidList)
         {
             // TODO: check data valid and save to db, after saving return bid list
             if (!ModelState.IsValid)
@@ -28,7 +28,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _bidRepository.Add(bidList);
 
-            var bids = _bidRepository.FindAll();
+            var bids = await _bidRepository.FindAll();
 
             return Ok(bids);
         }
@@ -46,7 +46,7 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateBid(int id, [FromBody] BidList bidList)
+        public async Task<IActionResult> UpdateBid(int id, [FromBody] BidList bidList)
         {
             // TODO: check required fields, if valid call service to update Bid and return list Bid
             var bidResearch = _bidRepository.FindById(id);
@@ -57,14 +57,14 @@ namespace Dot.Net.WebApi.Controllers
 
             _bidRepository.Update(id, bidList);
 
-            var bids = _bidRepository.FindAll();
+            var bids = await _bidRepository.FindAll();
 
             return Ok(bids);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteBid(int id)
+        public async Task<IActionResult> DeleteBid(int id)
         {
             var bidResearch = _bidRepository.FindById(id);
             if (bidResearch == null)
@@ -72,7 +72,7 @@ namespace Dot.Net.WebApi.Controllers
 
             _bidRepository.Delete(id);
 
-            var bids = _bidRepository.FindAll();
+            var bids = await _bidRepository.FindAll();
 
             return Ok(bids);
         }
