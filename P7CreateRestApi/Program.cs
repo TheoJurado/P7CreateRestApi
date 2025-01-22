@@ -1,5 +1,6 @@
 using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using P7CreateRestApi;
 using P7CreateRestApi.Repositories;
@@ -19,6 +20,11 @@ builder.Services.AddScoped<IRuleNameRepository, RuleNameRepository>();
 builder.Services.AddScoped<IRatingRepository, RatingRepository>();
 builder.Services.AddScoped<ICurvePointRepository, CurvePointRepository>();
 builder.Services.AddScoped<IBidListRepository, BidListRepository>();
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddDbContext<LocalDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
