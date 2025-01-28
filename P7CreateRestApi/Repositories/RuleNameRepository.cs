@@ -31,6 +31,7 @@ namespace Dot.Net.WebApi.Repositories
         public void Add(RuleName ruleName)
         {
             DbContext.RuleNames.Add(ruleName);
+            DbContext.SaveChanges();
         }
 
         public RuleName FindById(int id)
@@ -52,6 +53,7 @@ namespace Dot.Net.WebApi.Repositories
 
             ruleResearch = ruleName;
             DbContext.RuleNames.Update(ruleResearch);
+            DbContext.SaveChanges();
         }
         public void Delete(int id)
         {
@@ -59,6 +61,7 @@ namespace Dot.Net.WebApi.Repositories
             if (ruleResearch == null)
                 return;
             DbContext.Remove(ruleResearch);
+            DbContext.SaveChanges();
         }
     }
 }

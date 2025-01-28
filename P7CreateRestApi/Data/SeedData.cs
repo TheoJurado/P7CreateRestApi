@@ -3,6 +3,7 @@ using Dot.Net.WebApi.Domain;
 using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Controllers;
 using Dot.Net.WebApi.Controllers.Domain;
+using Microsoft.AspNetCore.Identity;
 
 namespace P7CreateRestApi.Data
 {
@@ -18,6 +19,7 @@ namespace P7CreateRestApi.Data
                 return;
             }/**/
 
+            var passwordHasher = new PasswordHasher<User>();
             User user1 = new User
             {
                 UserName = "User1",
@@ -25,6 +27,7 @@ namespace P7CreateRestApi.Data
                 FullName = "UserFN1",
                 Role = "Role"
             };
+            user1.PasswordHash = passwordHasher.HashPassword(user1, "1234PW");
             User user2 = new User
             {
                 UserName = "User2",
@@ -32,6 +35,7 @@ namespace P7CreateRestApi.Data
                 FullName = "UserFN2",
                 Role = "SuperRole"
             };
+            user2.PasswordHash = passwordHasher.HashPassword(user2, "2345PW");
             User user3 = new User
             {
                 UserName = "User3",
@@ -39,6 +43,7 @@ namespace P7CreateRestApi.Data
                 FullName = "UserFN3",
                 Role = "UnderRole"
             };
+            user3.PasswordHash = passwordHasher.HashPassword(user3, "3456PW");
             context.Users.AddRange(user1, user2, user3);
             context.SaveChanges();
 

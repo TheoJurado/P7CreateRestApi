@@ -4,6 +4,8 @@ using P7CreateRestApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using P7CreateRestApi.Models;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Dot.Net.WebApi.Controllers
 {
@@ -44,14 +46,27 @@ namespace Dot.Net.WebApi.Controllers
 
         [HttpPost]
         [Route("validate")]
-        public async Task<IActionResult> Validate([FromBody]User user)
+        public async Task<IActionResult> Validate([FromBody] UserViewModel user)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest("Model invalide");
             }
-
-            _userRepository.Add(user);
+            /*
+            if (!user.Password.Contains("h"))
+            {
+                ModelState.AddModelError(nameof(user.Password),"pas de H");
+                return BadRequest(ModelState);
+            }/**/
+            
+            _userRepository.Add(new User
+            {
+                UserName = user.UserName,
+                Password = user.Password,
+                FullName = user.FullName,
+                Role = user.Role
+            });/**/
+            /*_userRepository.Add(user);/**/
 
             var users = await _userRepository.FindAll();
 

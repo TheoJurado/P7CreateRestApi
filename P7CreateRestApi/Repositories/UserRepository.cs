@@ -28,6 +28,7 @@ namespace Dot.Net.WebApi.Repositories
         public void Add(User user)
         {
             DbContext.Users.Add(user);
+            DbContext.SaveChanges();
         }
 
         public User? FindById(int id)
@@ -49,6 +50,7 @@ namespace Dot.Net.WebApi.Repositories
 
             userResearch = user;
             DbContext.Users.Update(userResearch);
+            DbContext.SaveChanges();
         }
 
         public void Delete(int id)
@@ -57,6 +59,7 @@ namespace Dot.Net.WebApi.Repositories
             if(userResearch == null)
                 return;
             DbContext.Remove(userResearch);
+            DbContext.SaveChanges();
         }
     }
 }

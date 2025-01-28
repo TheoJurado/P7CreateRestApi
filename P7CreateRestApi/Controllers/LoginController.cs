@@ -9,13 +9,17 @@ namespace Dot.Net.WebApi.Controllers
     [Route("[controller]")]
     public class LoginController : ControllerBase
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        //private readonly UserManager<IdentityUser> _userManager;
+        private IUserRepository _userRepository;
         private readonly IJwtTokenService _jwtTokenService;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public LoginController(UserManager<IdentityUser> userManager, IJwtTokenService jwtTokenService)
+        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<IdentityUser> userManager)
         {
-            _userManager = userManager;
+            //_userManager = userManager;
             _jwtTokenService = jwtTokenService;
+            _userRepository = userRepository;
+            _userManager = userManager;
         }
 
         [HttpPost]
@@ -26,9 +30,15 @@ namespace Dot.Net.WebApi.Controllers
             if (!ModelState.IsValid)
                 return BadRequest("Invalid model");
 
-            var user = await _userManager.FindByNameAsync(model.Username);
-            if (user == null || !(await _userManager.CheckPasswordAsync(user, model.Password)))
-                return Unauthorized("Invalid username or password");
+            string wrongLogin = "Invalid username or password";
+            var user = _userRepository.FindByUserName(model.Username);
+            if (user == null)//if user not found
+                return Unauthorized(wrongLogin);
+
+            IdentityUser temporaryUser = new IdentityUser { PasswordHash = user.PasswordHash, };
+            var result = await _userManager.CheckPasswordAsync(temporaryUser, model.Password);
+            if (!result)//if password dont match
+                return Unauthorized(wrongLogin);
 
             // Generate the JWT Token
             var token = _jwtTokenService.GenerateJwtToken(user);

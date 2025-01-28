@@ -31,6 +31,7 @@ namespace Dot.Net.WebApi.Repositories
         public void Add(CurvePoint curvePoint)
         {
             DbContext.Curves.Add(curvePoint);
+            DbContext.SaveChanges();
         }
 
         public CurvePoint FindById(int id)
@@ -51,6 +52,7 @@ namespace Dot.Net.WebApi.Repositories
 
             curveResearch = curve;
             DbContext.Curves.Update(curveResearch);
+            DbContext.SaveChanges();
         }
         public void Delete(int id)
         {
@@ -58,6 +60,7 @@ namespace Dot.Net.WebApi.Repositories
             if (curveResearch == null)
                 return;
             DbContext.Remove(curveResearch);
+            DbContext.SaveChanges();
         }
     }
 }
