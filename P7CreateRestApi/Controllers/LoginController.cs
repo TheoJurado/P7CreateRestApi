@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using P7CreateRestApi.Models;
 using P7CreateRestApi.Repositories;
+using Dot.Net.WebApi.Domain;
 
 namespace Dot.Net.WebApi.Controllers
 {
@@ -12,14 +13,15 @@ namespace Dot.Net.WebApi.Controllers
         //private readonly UserManager<IdentityUser> _userManager;
         private IUserRepository _userRepository;
         private readonly IJwtTokenService _jwtTokenService;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<IdentityUser> userManager)
+        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<User> userManager, SignInManager<User> signInManager)
         {
-            //_userManager = userManager;
             _jwtTokenService = jwtTokenService;
             _userRepository = userRepository;
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpPost]
@@ -30,15 +32,24 @@ namespace Dot.Net.WebApi.Controllers
             if (!ModelState.IsValid)
                 return BadRequest("Invalid model");
 
-            string wrongLogin = "Invalid username or password";
-            var user = _userRepository.FindByUserName(model.Username);
-            if (user == null)//if user not found
-                return Unauthorized(wrongLogin);
+            var user0 = _userRepository.FindByUserName(model.Username);
+            if (user0 == null)//if user not found
+                return Unauthorized("Invalid username or password");
 
-            IdentityUser temporaryUser = new IdentityUser { PasswordHash = user.PasswordHash, };
-            var result = await _userManager.CheckPasswordAsync(temporaryUser, model.Password);
-            if (!result)//if password dont match
-                return Unauthorized(wrongLogin);
+            var user = await _userManager.FindByNameAsync(model.Username);
+            if (user == null)
+                return Unauthorized("User not found in Identity.");
+
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, false, false);//PasswordSignInAsync
+            if (result.IsNotAllowed)
+                return Unauthorized("User is not allowed to sign in");
+            if (result.IsLockedOut)
+                return Unauthorized("User is locked out");
+            if (result.RequiresTwoFactor)
+                return Unauthorized("Two-factor authentication is required");
+
+            if (!result.Succeeded)//if password dont match
+                return Unauthorized("Invalid username or password");
 
             // Generate the JWT Token
             var token = _jwtTokenService.GenerateJwtToken(user);

@@ -2,11 +2,12 @@ using Dot.Net.WebApi.Domain;
 using Dot.Net.WebApi.Repositories;
 using P7CreateRestApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Dot.Net.WebApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class TradeController : ControllerBase
     {
         private ITradeRepository _tradeRepository;
@@ -40,11 +41,12 @@ namespace Dot.Net.WebApi.Controllers
                 return Ok();
             }
         }
-
+        
+        [Authorize(Roles = "Admin,SuperRole")]
         [HttpPost]
         [Route("validate")]
         public async Task<IActionResult> Validate([FromBody]Trade trade)
-        {//???
+        {
             // TODO: check data valid and save to db, after saving return Trade list
             if (!ModelState.IsValid)
             {
@@ -56,7 +58,23 @@ namespace Dot.Net.WebApi.Controllers
             var trades = await _tradeRepository.FindAll();
 
             return Ok(trades);
-        }
+        }/**/
+        /*
+        [HttpPost("validate")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Validate([FromBody] Trade trade)
+        {
+            var user = User.Identity;
+            var isAuthenticated = user.IsAuthenticated;
+            var userName = user.Name ?? "Non authentifié";
+
+            return Ok(new
+            {
+                IsAuthenticated = isAuthenticated,
+                UserName = userName,
+                Claims = User.Claims.Select(c => new { c.Type, c.Value }).ToList()
+            });
+        }/**/
 
         [HttpGet]
         [Route("update/{id}")]

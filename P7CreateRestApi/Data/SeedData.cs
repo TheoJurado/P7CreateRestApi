@@ -9,16 +9,22 @@ namespace P7CreateRestApi.Data
 {
     public class SeedData
     {
-        public static void Initialize(IServiceProvider serviceProvider)
+        //public static void Initialize(IServiceProvider serviceProvider)
+        public static async Task Initialize(IServiceProvider serviceProvider)
         {
             using var context = new LocalDbContext(
                 serviceProvider.GetRequiredService<DbContextOptions<LocalDbContext>>());
 
-            if (context.Users.Any() && context.Trades.Any() && context.Ratings.Any())
+            var userManager = serviceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<Role>>();
+
+            bool alreadyFeeded = context.Users.Any() && context.Trades.Any() && context.Ratings.Any();
+            if (alreadyFeeded)
             {
                 return;
             }/**/
 
+            /*
             var passwordHasher = new PasswordHasher<User>();
             User user1 = new User
             {
@@ -28,14 +34,16 @@ namespace P7CreateRestApi.Data
                 Role = "Role"
             };
             user1.PasswordHash = passwordHasher.HashPassword(user1, "1234PW");
+            user1.EmailConfirmed = true;
             User user2 = new User
             {
                 UserName = "User2",
                 Password = "2345PW",
                 FullName = "UserFN2",
-                Role = "SuperRole"
+                Role = "SuperRole",
             };
             user2.PasswordHash = passwordHasher.HashPassword(user2, "2345PW");
+            user2.EmailConfirmed = true;
             User user3 = new User
             {
                 UserName = "User3",
@@ -44,8 +52,48 @@ namespace P7CreateRestApi.Data
                 Role = "UnderRole"
             };
             user3.PasswordHash = passwordHasher.HashPassword(user3, "3456PW");
-            context.Users.AddRange(user1, user2, user3);
+            user3.EmailConfirmed = true;
+            context.Users.AddRange(user1, user2, user3);/**/
+
+            var result1 = await roleManager.CreateAsync(new Role { Name = "Admin" });
+            var result2 = await roleManager.CreateAsync(new Role { Name = "User" });
+            async Task CreateUser(string username, string password, string role)
+            {
+                if (await userManager.FindByNameAsync(username) == null)
+                {
+                    var user = new User
+                    {
+                        UserName = username,
+                        Password = password,
+                        Role = role,
+                        Email = $"{username.ToLower()}@example.com",
+                        FullName = $"{username} FullName",
+                        EmailConfirmed = true
+                    };
+
+                    var result = await userManager.CreateAsync(user, password);
+                    if (result.Succeeded)
+                    {
+                        await userManager.AddToRoleAsync(user, role);
+                    }
+                }
+            }
+            await CreateUser("User1", "1234Pw!", "User");
+            await CreateUser("User2", "2345Pw!", "Admin");
+            await CreateUser("User3", "3456Pw!", "User");
+            var result6 = await context.SaveChangesAsync();
+
+
+
+            /*Role roleAdmin = new Role("Admin");
+            Role roleUser = new Role("User");
+            context.Roles.AddRange(roleAdmin, roleUser);
             context.SaveChanges();
+
+            context.UserRoles.AddRange(
+                new IdentityUserRole<int> { RoleId = roleAdmin.Id, UserId = user2.Id }, 
+                new IdentityUserRole<int> { RoleId = roleUser.Id, UserId = user1.Id });
+            context.SaveChanges();/**/
 
             Trade trade1 = new Trade
             {

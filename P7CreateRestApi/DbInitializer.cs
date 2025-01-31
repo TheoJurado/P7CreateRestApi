@@ -6,7 +6,7 @@ namespace P7CreateRestApi
 {
     public static class DbInitializer
     {
-        public static IApplicationBuilder SeedDatabase(this IApplicationBuilder app)
+        public static async Task<IApplicationBuilder> SeedDatabaseAsync(this IApplicationBuilder app)
         {
             // Ensure that the 'app' parameter is not null. Throws an exception if it is.
             ArgumentNullException.ThrowIfNull(app, nameof(app));
@@ -40,7 +40,7 @@ namespace P7CreateRestApi
                 logger.LogInformation("Database migration completed. Starting database seeding...");
 
                 // Initialize and seed the database with default data.
-                SeedData.Initialize(services);
+                await SeedData.Initialize(services);
 
                 // Log the successful completion of database seeding.
                 logger.LogInformation("Database seeding completed successfully.");
