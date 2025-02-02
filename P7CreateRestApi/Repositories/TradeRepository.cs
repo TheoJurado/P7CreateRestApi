@@ -1,4 +1,5 @@
-﻿using Dot.Net.WebApi.Data;
+﻿using Dot.Net.WebApi.Controllers;
+using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Domain;
 using Microsoft.EntityFrameworkCore;
 using P7CreateRestApi.Repositories;
@@ -45,11 +46,12 @@ namespace Dot.Net.WebApi.Repositories
             Trade? tradeResearch = DbContext.Trades.Find(id);
             if (tradeResearch == null)
                 return;
-            if (trade.TradeId != id)
-                return;
 
-            tradeResearch = trade;
-            DbContext.Trades.Update(tradeResearch);
+            trade.TradeId = id; // S'assurer que l'ID reste inchangé
+            var existingEntity = DbContext.RuleNames.Local.FirstOrDefault(e => e.Id == id);
+            DbContext.Entry(existingEntity).State = EntityState.Detached;
+            DbContext.Trades.Update(trade);
+
             DbContext.SaveChanges();
         }
         public void Delete(int id)

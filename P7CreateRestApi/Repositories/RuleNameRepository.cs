@@ -49,13 +49,11 @@ namespace Dot.Net.WebApi.Repositories
             var ruleResearch = DbContext.RuleNames.Find(id);
             if (ruleResearch == null)
                 return;
-            
-            ruleResearch.Name = ruleName.Name;
-            ruleResearch.Description = ruleName.Description;
-            ruleResearch.Json = ruleName.Json;
-            ruleResearch.Template = ruleName.Template;
-            ruleResearch.SqlStr = ruleName.SqlStr;
-            ruleResearch.SqlPart = ruleName.SqlPart;
+
+            ruleName.Id = id; // S'assurer que l'ID reste inchangé
+            var existingEntity = DbContext.RuleNames.Local.FirstOrDefault(e => e.Id == id);
+            DbContext.Entry(existingEntity).State = EntityState.Detached;
+            DbContext.RuleNames.Update(ruleName);
 
             DbContext.SaveChanges();
         }

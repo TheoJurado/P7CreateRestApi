@@ -1,4 +1,5 @@
-﻿using Dot.Net.WebApi.Data;
+﻿using Dot.Net.WebApi.Controllers;
+using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Domain;
 using Microsoft.EntityFrameworkCore;
 using P7CreateRestApi.Repositories;
@@ -44,11 +45,12 @@ namespace Dot.Net.WebApi.Repositories
             var bidResearch = DbContext.Bids.Find(id);
             if (bidResearch == null)
                 return;
-            if (bid.BidListId != id)
-                return;
 
-            bidResearch = bid;
-            DbContext.Bids.Update(bidResearch);
+            bid.BidListId = id; // S'assurer que l'ID reste inchangé
+            var existingEntity = DbContext.RuleNames.Local.FirstOrDefault(e => e.Id == id);
+            DbContext.Entry(existingEntity).State = EntityState.Detached;
+            DbContext.Bids.Update(bid);
+
             DbContext.SaveChanges();
         }
         public void Delete(int id)

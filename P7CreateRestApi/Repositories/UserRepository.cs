@@ -1,3 +1,4 @@
+using Dot.Net.WebApi.Controllers;
 using Dot.Net.WebApi.Data;
 using Dot.Net.WebApi.Domain;
 using Microsoft.EntityFrameworkCore;
@@ -45,11 +46,12 @@ namespace Dot.Net.WebApi.Repositories
             User? userResearch = DbContext.Users.Find(id);
             if( userResearch == null)
                 return;
-            if (user.Id != id)
-                return;
 
-            userResearch = user;
-            DbContext.Users.Update(userResearch);
+            user.Id = id; // S'assurer que l'ID reste inchangé
+            var existingEntity = DbContext.RuleNames.Local.FirstOrDefault(e => e.Id == id);
+            DbContext.Entry(existingEntity).State = EntityState.Detached;
+            DbContext.Users.Update(user);
+
             DbContext.SaveChanges();
         }
 
