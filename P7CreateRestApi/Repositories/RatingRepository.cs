@@ -30,6 +30,7 @@ namespace Dot.Net.WebApi.Repositories
         public void Add(Rating rating)
         {
             DbContext.Ratings.Add(rating);
+            DbContext.SaveChanges();
         }
 
         public Rating FindById(int id)
@@ -39,6 +40,27 @@ namespace Dot.Net.WebApi.Repositories
                 return null;
             else
                 return rating;
+        }
+
+        public void Update(int id, Rating rating)
+        {
+            var ratingResearch = DbContext.Ratings.Find(id);
+            if (ratingResearch == null)
+                return;
+            if (rating.Id != id)
+                return;
+
+            ratingResearch = rating;
+            DbContext.Ratings.Update(ratingResearch);
+            DbContext.SaveChanges();
+        }
+        public void Delete(int id)
+        {
+            var ratingResearch = DbContext.Ratings.Find(id);
+            if (ratingResearch == null)
+                return;
+            DbContext.Remove(ratingResearch);
+            DbContext.SaveChanges();
         }
     }
 }

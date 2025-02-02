@@ -1,4 +1,8 @@
+using Dot.Net.WebApi.Domain;
+using Dot.Net.WebApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using P7CreateRestApi.Repositories;
+using System.Diagnostics;
 
 namespace Dot.Net.WebApi.Controllers
 {
@@ -6,29 +10,53 @@ namespace Dot.Net.WebApi.Controllers
     [Route("[controller]")]
     public class RuleNameController : ControllerBase
     {
-        // TODO: Inject RuleName service
+        private IRuleNameRepository _ruleNameRepository;
+
+        public RuleNameController(IRuleNameRepository ruleRepository)
+        {
+            _ruleNameRepository = ruleRepository;
+        }
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
             // TODO: find all RuleName, add to model
-            return Ok();
+            var rules = await _ruleNameRepository.FindAll();
+
+            return Ok(rules);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("add")]
-        public IActionResult AddRuleName([FromBody]RuleName trade)
+        public IActionResult AddRuleName([FromBody]RuleName rule)
         {
-            return Ok();
+            if (rule == null)
+            {
+                return BadRequest("Les informations sont invalides.");
+            }
+            else
+            {
+                _ruleNameRepository.Add(rule);
+                return Ok();
+            }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]RuleName trade)
+        public async Task<IActionResult> Validate([FromBody]RuleName rule)
         {
             // TODO: check data valid and save to db, after saving return RuleName list
-            return Ok();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Model invalide");
+            }
+
+            _ruleNameRepository.Add(rule);
+
+            var rules = await _ruleNameRepository.FindAll();
+
+            return Ok(rules);
         }
 
         [HttpGet]
@@ -36,23 +64,45 @@ namespace Dot.Net.WebApi.Controllers
         public IActionResult ShowUpdateForm(int id)
         {
             // TODO: get RuleName by Id and to model then show to the form
-            return Ok();
+            var rule = _ruleNameRepository.FindById(id);
+            if (rule == null)
+                return BadRequest("Invalid Id:" + id);
+
+            return Ok(rule);
         }
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateRuleName(int id, [FromBody] RuleName rating)
+        public async Task<IActionResult> UpdateRuleName(int id, [FromBody] RuleName rule)
         {
             // TODO: check required fields, if valid call service to update RuleName and return RuleName list
-            return Ok();
+            var ruleResearch = _ruleNameRepository.FindById(id);
+            if (ruleResearch == null)
+                return BadRequest("L'ID est invalide.");
+            if (rule.Id != id)
+                return BadRequest("Les informations sont invalides.");
+
+            _ruleNameRepository.Update(id, rule);
+
+            var rules = await _ruleNameRepository.FindAll();
+
+            return Ok(rules);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteRuleName(int id)
+        public async Task<IActionResult> DeleteRuleName(int id)
         {
             // TODO: Find RuleName by Id and delete the RuleName, return to Rule list
-            return Ok();
+            var ruleResearch = _ruleNameRepository.FindById(id);
+            if (ruleResearch == null)
+                return BadRequest("L'ID est invalide.");
+
+            _ruleNameRepository.Delete(id);
+
+            var rules = await _ruleNameRepository.FindAll();
+
+            return Ok(rules);
         }
     }
 }

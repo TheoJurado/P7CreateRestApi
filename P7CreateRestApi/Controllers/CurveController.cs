@@ -1,5 +1,8 @@
+using Dot.Net.WebApi.Controllers.Domain;
 using Dot.Net.WebApi.Domain;
+using Dot.Net.WebApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using P7CreateRestApi.Repositories;
 
 namespace Dot.Net.WebApi.Controllers
 {
@@ -8,27 +11,52 @@ namespace Dot.Net.WebApi.Controllers
     public class CurveController : ControllerBase
     {
         // TODO: Inject Curve Point service
+        private ICurvePointRepository _curveRepository;
+
+        public CurveController(ICurvePointRepository curveRepository)
+        {
+            _curveRepository = curveRepository;
+        }
 
         [HttpGet]
         [Route("list")]
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
-            return Ok();
+            var curves = await _curveRepository.FindAll();
+
+            return Ok(curves);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("add")]
         public IActionResult AddCurvePoint([FromBody]CurvePoint curvePoint)
         {
-            return Ok();
+            if (curvePoint == null)
+            {
+                return BadRequest("Les informations sont invalides.");
+            }
+            else
+            {
+                _curveRepository.Add(curvePoint);
+                return Ok();
+            }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("validate")]
-        public IActionResult Validate([FromBody]CurvePoint curvePoint)
+        public async Task<IActionResult> Validate([FromBody]CurvePoint curvePoint)
         {
             // TODO: check data valid and save to db, after saving return bid list
-            return Ok();
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Model invalide");
+            }
+
+            _curveRepository.Add(curvePoint);
+
+            var curves = await _curveRepository.FindAll();
+
+            return Ok(curves);
         }
 
         [HttpGet]
@@ -36,23 +64,45 @@ namespace Dot.Net.WebApi.Controllers
         public IActionResult ShowUpdateForm(int id)
         {
             // TODO: get CurvePoint by Id and to model then show to the form
-            return Ok();
+            var curve = _curveRepository.FindById(id);
+            if (curve == null)
+                return BadRequest("Invalid Id:" + id);
+
+            return Ok(curve);
         }
 
         [HttpPost]
         [Route("update/{id}")]
-        public IActionResult UpdateCurvePoint(int id, [FromBody] CurvePoint curvePoint)
+        public async Task<IActionResult> UpdateCurvePoint(int id, [FromBody] CurvePoint curvePoint)
         {
             // TODO: check required fields, if valid call service to update Curve and return Curve list
-            return Ok();
+            var curveResearch = _curveRepository.FindById(id);
+            if (curveResearch == null)
+                return BadRequest("L'ID est invalide.");
+            if (curvePoint.Id != id)
+                return BadRequest("Les informations sont invalides.");
+
+            _curveRepository.Update(id, curvePoint);
+
+            var curves = await _curveRepository.FindAll();
+
+            return Ok(curves);
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult DeleteBid(int id)
+        public async Task<IActionResult> DeleteBid(int id)
         {
             // TODO: Find Curve by Id and delete the Curve, return to Curve list
-            return Ok();
+            var curveResearch = _curveRepository.FindById(id);
+            if (curveResearch == null)
+                return BadRequest("L'ID est invalide.");
+
+            _curveRepository.Delete(id);
+
+            var curves = await _curveRepository.FindAll();
+
+            return Ok(curves);
         }
     }
 }

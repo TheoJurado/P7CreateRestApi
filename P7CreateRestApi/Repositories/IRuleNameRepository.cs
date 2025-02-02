@@ -8,5 +8,7 @@ namespace P7CreateRestApi.Repositories
         Task<List<RuleName>> FindAll();
         void Add(RuleName ruleName);
         RuleName FindById(int id);
+        public void Update(int id, RuleName ruleName);
+        public void Delete(int id);
     }
 }

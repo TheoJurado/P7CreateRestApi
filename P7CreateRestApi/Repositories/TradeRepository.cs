@@ -28,6 +28,7 @@ namespace Dot.Net.WebApi.Repositories
         public void Add(Trade trade)
         {
             DbContext.Trades.Add(trade);
+            DbContext.SaveChanges();
         }
 
         public Trade FindById(int id)
@@ -37,6 +38,27 @@ namespace Dot.Net.WebApi.Repositories
                 return null;
             else
                 return trade;
+        }
+
+        public void Update(int id, Trade trade)
+        {
+            Trade? tradeResearch = DbContext.Trades.Find(id);
+            if (tradeResearch == null)
+                return;
+            if (trade.TradeId != id)
+                return;
+
+            tradeResearch = trade;
+            DbContext.Trades.Update(tradeResearch);
+            DbContext.SaveChanges();
+        }
+        public void Delete(int id)
+        {
+            Trade? tradeResearch = DbContext.Trades.Find(id);
+            if (tradeResearch == null)
+                return;
+            DbContext.Remove(tradeResearch);
+            DbContext.SaveChanges();
         }
     }
 }

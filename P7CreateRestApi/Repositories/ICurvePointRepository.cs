@@ -10,5 +10,7 @@ namespace P7CreateRestApi.Repositories
         Task<List<CurvePoint>> FindAll();
         void Add(CurvePoint rating);
         CurvePoint FindById(int id);
+        public void Update(int id, CurvePoint curve);
+        public void Delete(int id);
     }
 }

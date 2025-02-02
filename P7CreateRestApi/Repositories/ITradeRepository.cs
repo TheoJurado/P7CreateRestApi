@@ -8,5 +8,7 @@ namespace P7CreateRestApi.Repositories
         Task<List<Trade>> FindAll();
         void Add(Trade trade);
         Trade FindById(int id);
+        public void Update(int id, Trade trade);
+        public void Delete(int id);
     }
 }

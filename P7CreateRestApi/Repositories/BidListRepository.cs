@@ -28,6 +28,7 @@ namespace Dot.Net.WebApi.Repositories
         public void Add(BidList bidList)
         {
             DbContext.Bids.Add(bidList);
+            DbContext.SaveChanges();
         }
 
         public BidList FindById(int id)
@@ -37,6 +38,26 @@ namespace Dot.Net.WebApi.Repositories
                 return null;
             else
                 return bidList;
+        }
+        public void Update(int id, BidList bid)
+        {
+            var bidResearch = DbContext.Bids.Find(id);
+            if (bidResearch == null)
+                return;
+            if (bid.BidListId != id)
+                return;
+
+            bidResearch = bid;
+            DbContext.Bids.Update(bidResearch);
+            DbContext.SaveChanges();
+        }
+        public void Delete(int id)
+        {
+            var bidResearch = DbContext.Bids.Find(id);
+            if (bidResearch == null)
+                return;
+            DbContext.Remove(bidResearch);
+            DbContext.SaveChanges();
         }
     }
 }
