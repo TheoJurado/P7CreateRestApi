@@ -9,9 +9,23 @@ using P7CreateRestApi.Repositories;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Dot.Net.WebApi.Domain;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
+
+
+//log part
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddDebug();
+builder.Logging.AddSerilog();
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()//log in console
+    .WriteTo.File("logs/myapp.log", rollingInterval: RollingInterval.Day)//log file
+    .CreateLogger();
+builder.Host.UseSerilog();
 
 // Add services to the container.
 
@@ -106,7 +120,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.SeedDatabaseAsync();
+    Task<IApplicationBuilder> task = app.SeedDatabaseAsync();
 
     app.UseSwagger();
     app.UseSwaggerUI();

@@ -4,6 +4,7 @@ using Dot.Net.WebApi.Domain;
 using Microsoft.EntityFrameworkCore;
 using P7CreateRestApi.Repositories;
 using System.Data;
+using System.Reflection;
 
 
 namespace Dot.Net.WebApi.Repositories
@@ -48,11 +49,14 @@ namespace Dot.Net.WebApi.Repositories
             var ruleResearch = DbContext.RuleNames.Find(id);
             if (ruleResearch == null)
                 return;
-            if (ruleName.Id != id)
-                return;
+            
+            ruleResearch.Name = ruleName.Name;
+            ruleResearch.Description = ruleName.Description;
+            ruleResearch.Json = ruleName.Json;
+            ruleResearch.Template = ruleName.Template;
+            ruleResearch.SqlStr = ruleName.SqlStr;
+            ruleResearch.SqlPart = ruleName.SqlPart;
 
-            ruleResearch = ruleName;
-            DbContext.RuleNames.Update(ruleResearch);
             DbContext.SaveChanges();
         }
         public void Delete(int id)

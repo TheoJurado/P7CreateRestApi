@@ -11,16 +11,19 @@ namespace Dot.Net.WebApi.Controllers
     public class TradeController : ControllerBase
     {
         private ITradeRepository _tradeRepository;
+        private readonly ILogger<TradeController> _logger;
 
-        public TradeController(ITradeRepository tradeRepository)
+        public TradeController(ITradeRepository tradeRepository, ILogger<TradeController> logger)
         {
             _tradeRepository = tradeRepository;
+            _logger = logger;
         }
 
         [HttpGet]
         [Route("list")]
         public async Task<IActionResult> Home()
         {
+            _logger.LogDebug("Affichage de tous les trades");
             // TODO: find all Trade, add to model
             var trades = await _tradeRepository.FindAll();
 
@@ -50,31 +53,20 @@ namespace Dot.Net.WebApi.Controllers
             // TODO: check data valid and save to db, after saving return Trade list
             if (!ModelState.IsValid)
             {
+                _logger.LogInformation("Model invalide : {trade}", trade);
                 return BadRequest("Model invalide");
             }
 
             _tradeRepository.Add(trade);
 
+            //log
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a ajouté un trade : {Trade}", userName, trade.TradeId);
+
             var trades = await _tradeRepository.FindAll();
 
             return Ok(trades);
-        }/**/
-        /*
-        [HttpPost("validate")]
-        [AllowAnonymous]
-        public async Task<IActionResult> Validate([FromBody] Trade trade)
-        {
-            var user = User.Identity;
-            var isAuthenticated = user.IsAuthenticated;
-            var userName = user.Name ?? "Non authentifié";
-
-            return Ok(new
-            {
-                IsAuthenticated = isAuthenticated,
-                UserName = userName,
-                Claims = User.Claims.Select(c => new { c.Type, c.Value }).ToList()
-            });
-        }/**/
+        }
 
         [HttpGet]
         [Route("update/{id}")]
