@@ -1,0 +1,2258 @@
+2025-02-06 18:12:33.235 +01:00 [INF] Attempting to migrate database...
+2025-02-06 18:12:33.373 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-06 18:12:33.809 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<int>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-02-06 18:12:33.812 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<int>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-02-06 18:12:34.020 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:12:34.069 +01:00 [DBG] Migrating using database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.075 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.302 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.311 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:12:34.318 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2025-02-06 18:12:34.330 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:12:34.355 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:12:34.358 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.365 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.371 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:12:34.372 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:12:34.373 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.374 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.375 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:12:34.392 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:12:34.393 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.394 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.396 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.396 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.397 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:12:34.397 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-06 18:12:34.398 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:12:34.400 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:12:34.401 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.401 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.402 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:12:34.403 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:12:34.403 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.404 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.405 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:12:34.406 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:12:34.407 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.407 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.417 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:34.418 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:34.419 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.420 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.421 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:12:34.425 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:12:34.429 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:34.430 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.430 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.441 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-02-06 18:12:34.441 +01:00 [INF] Database migration completed. Starting database seeding...
+2025-02-06 18:12:34.464 +01:00 [INF] User profile is available. Using 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 18:12:34.475 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:12:34.515 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-02-06 18:12:34.693 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AspNetUsers AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:12:34.726 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:34.727 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:34.727 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.728 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.729 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:12:34.732 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:12:34.735 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:34.735 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.736 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.737 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .Any()'
+2025-02-06 18:12:34.739 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Trades AS t)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:12:34.740 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:34.740 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:34.741 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.742 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.742 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:12:34.744 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:12:34.745 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:34.746 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.747 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.747 +01:00 [DBG] Compiling query expression: 
+'DbSet<Rating>()
+    .Any()'
+2025-02-06 18:12:34.749 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Ratings AS r)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:12:34.750 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:34.750 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:34.751 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.751 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.752 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:12:34.754 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:12:34.755 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:34.755 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.756 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:34.758 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:12:34.760 +01:00 [INF] Database seeding completed successfully.
+2025-02-06 18:12:34.760 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:12:34.800 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-06 18:12:34.836 +01:00 [DBG] Hosting starting
+2025-02-06 18:12:34.838 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-247b0a39-f609-48fc-b6b7-7a33f372eb2e.xml'.
+2025-02-06 18:12:34.840 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-725444c4-37ef-4daf-931e-d4f9619f3a6a.xml'.
+2025-02-06 18:12:34.841 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-db019ecf-993b-438c-a7c8-067794bbe92c.xml'.
+2025-02-06 18:12:34.845 +01:00 [DBG] Found key {247b0a39-f609-48fc-b6b7-7a33f372eb2e}.
+2025-02-06 18:12:34.848 +01:00 [DBG] Found key {725444c4-37ef-4daf-931e-d4f9619f3a6a}.
+2025-02-06 18:12:34.849 +01:00 [DBG] Found key {db019ecf-993b-438c-a7c8-067794bbe92c}.
+2025-02-06 18:12:34.854 +01:00 [DBG] Considering key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} with expiration date 2025-04-22 15:40:52Z as default key.
+2025-02-06 18:12:34.856 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:12:34.857 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-02-06 18:12:34.859 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:12:34.860 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-02-06 18:12:34.862 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-02-06 18:12:34.864 +01:00 [DBG] Using key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} as the default key.
+2025-02-06 18:12:34.865 +01:00 [DBG] Key ring with default key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} was loaded during application startup.
+2025-02-06 18:12:34.951 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: A3216B6127E90058C2C66916F8E72F95CC8E8F22)
+2025-02-06 18:12:34.990 +01:00 [INF] Now listening on: https://localhost:7210
+2025-02-06 18:12:34.990 +01:00 [INF] Now listening on: http://localhost:5267
+2025-02-06 18:12:34.991 +01:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2025-02-06 18:12:34.991 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-06 18:12:34.992 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-06 18:12:34.992 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 18:12:34.993 +01:00 [INF] Hosting environment: Development
+2025-02-06 18:12:34.993 +01:00 [INF] Content root path: S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\P7CreateRestApi\
+2025-02-06 18:12:34.994 +01:00 [DBG] Hosting started
+2025-02-06 18:12:35.025 +01:00 [DBG] Connection id "0HNA6Q5PI53BT" accepted.
+2025-02-06 18:12:35.025 +01:00 [DBG] Connection id "0HNA6Q5PI53BS" accepted.
+2025-02-06 18:12:35.026 +01:00 [DBG] Connection id "0HNA6Q5PI53BS" started.
+2025-02-06 18:12:35.026 +01:00 [DBG] Connection id "0HNA6Q5PI53BT" started.
+2025-02-06 18:12:35.044 +01:00 [DBG] Connection id "0HNA6Q5PI53BS" received FIN.
+2025-02-06 18:12:35.044 +01:00 [DBG] Connection id "0HNA6Q5PI53BT" received FIN.
+2025-02-06 18:12:35.081 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:12:35.082 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:12:35.109 +01:00 [DBG] Connection id "0HNA6Q5PI53BT" stopped.
+2025-02-06 18:12:35.109 +01:00 [DBG] Connection id "0HNA6Q5PI53BS" stopped.
+2025-02-06 18:12:35.112 +01:00 [DBG] Connection id "0HNA6Q5PI53BT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:12:35.112 +01:00 [DBG] Connection id "0HNA6Q5PI53BS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:12:35.320 +01:00 [DBG] Connection id "0HNA6Q5PI53BU" accepted.
+2025-02-06 18:12:35.321 +01:00 [DBG] Connection id "0HNA6Q5PI53BU" started.
+2025-02-06 18:12:35.362 +01:00 [DBG] Connection 0HNA6Q5PI53BU established using the following protocol: "Tls13"
+2025-02-06 18:12:35.415 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2025-02-06 18:12:35.500 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-06 18:12:35.519 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-06 18:12:35.519 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:12:35.661 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-02-06 18:12:35.663 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-02-06 18:12:35.683 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-02-06 18:12:35.685 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-02-06 18:12:35.689 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 277.0584ms
+2025-02-06 18:12:35.706 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2025-02-06 18:12:35.710 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.8456ms
+2025-02-06 18:12:35.780 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2025-02-06 18:12:35.829 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.4071ms
+2025-02-06 18:12:35.877 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2025-02-06 18:12:35.881 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-06 18:12:35.881 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:12:35.968 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.2154ms
+2025-02-06 18:12:40.433 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:12:40.439 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:12:40.440 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:12:40.442 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:12:40.443 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:12:40.515 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:12:40.530 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(e => EF.Property<int>(e, "Id") == __p_0)'
+2025-02-06 18:12:40.597 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.Email (string) MaxLength(256), 3], [Property: User.EmailConfirmed (bool) Required, 4], [Property: User.FullName (string) Required, 5], [Property: User.LockoutEnabled (bool) Required, 6], [Property: User.LockoutEnd (DateTimeOffset?), 7], [Property: User.NormalizedEmail (string) Index MaxLength(256), 8], [Property: User.NormalizedUserName (string) Index MaxLength(256), 9], [Property: User.Password (string) Required, 10], [Property: User.PasswordHash (string), 11], [Property: User.PhoneNumber (string), 12], [Property: User.PhoneNumberConfirmed (bool) Required, 13], [Property: User.Role (string) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UserName (string) MaxLength(256), 17] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FullName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.Password, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.Role, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.Id == @__p_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:12:40.618 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:40.619 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:40.630 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.634 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.640 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-06 18:12:40.682 +01:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-02-06 18:12:40.720 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:12:40.762 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:40.767 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.768 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.785 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserClaim<int>>()
+    .Where(uc => uc.UserId.Equals(__user_Id_0))
+    .Select(c => c.ToClaim())'
+2025-02-06 18:12:40.817 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: IdentityUserClaim<int>.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUserClaim<int>.ClaimType (string), 1], [Property: IdentityUserClaim<int>.ClaimValue (string), 2], [Property: IdentityUserClaim<int>.UserId (int) Required FK Index, 3] }
+        SELECT a.Id, a.ClaimType, a.ClaimValue, a.UserId
+        FROM AspNetUserClaims AS a
+        WHERE a.UserId == @__user_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:12:40.819 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:40.819 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:40.820 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.821 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.821 +01:00 [DBG] Executing DbCommand [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:12:40.824 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:12:40.826 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:40.827 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.828 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.840 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserRole<int>>()
+    .Join(
+        inner: DbSet<Role>(), 
+        outerKeySelector: userRole => userRole.RoleId, 
+        innerKeySelector: role => role.Id, 
+        resultSelector: (userRole, role) => new { 
+            userRole = userRole, 
+            role = role
+         })
+    .Where(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.userRole.UserId.Equals(__userId_0))
+    .Select(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.role.Name)'
+2025-02-06 18:12:40.857 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<string>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT a0.Name
+        FROM AspNetUserRoles AS a
+        INNER JOIN AspNetRoles AS a0 ON a.RoleId == a0.Id
+        WHERE a.UserId == @__userId_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, string>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:12:40.859 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:40.860 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:40.860 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.861 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.862 +01:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:12:40.867 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:12:40.868 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:40.869 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.869 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.874 +01:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .FirstOrDefault(r => r.NormalizedName == __normalizedName_0)'
+2025-02-06 18:12:40.876 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: new SingleQueryingEnumerable<Role>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.ConcurrencyStamp (string) Concurrency, 1], [Property: Role.Name (string) MaxLength(256), 2], [Property: Role.NormalizedName (string) Index MaxLength(256), 3] }
+            SELECT TOP(1) a.Id, a.ConcurrencyStamp, a.Name, a.NormalizedName
+            FROM AspNetRoles AS a
+            WHERE a.NormalizedName == @__normalizedName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Role>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:12:40.882 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:40.882 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:40.883 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.884 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.885 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:12:40.888 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:12:40.893 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:12:40.898 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:40.898 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.899 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.903 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityRoleClaim<int>>()
+    .Where(rc => rc.RoleId.Equals(__role_Id_0))
+    .Select(c => new Claim(
+        c.ClaimType, 
+        c.ClaimValue
+    ))'
+2025-02-06 18:12:40.906 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+        SELECT a.ClaimType, a.ClaimValue
+        FROM AspNetRoleClaims AS a
+        WHERE a.RoleId == @__role_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:12:40.907 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:40.907 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:40.908 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.909 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.909 +01:00 [DBG] Executing DbCommand [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:12:40.912 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:12:40.913 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:40.913 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.914 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:40.919 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:12:40.965 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:12:40.969 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:12:40.974 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:12:40.983 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:12:40.985 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 552.1370ms
+2025-02-06 18:12:56.930 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7210/Login/login application/json 50
+2025-02-06 18:12:56.931 +01:00 [DBG] 1 candidate(s) found for the request path '/Login/login'
+2025-02-06 18:12:56.931 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)' with route pattern 'Login/login' is valid for the request path '/Login/login'
+2025-02-06 18:12:56.932 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:12:56.932 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:12:56.934 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:12:56.935 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:12:56.936 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:12:56.958 +01:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P7CreateRestApi.Models.LoginModel) on controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi).
+2025-02-06 18:12:56.959 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-06 18:12:56.960 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-06 18:12:56.961 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-06 18:12:56.962 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-06 18:12:56.963 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-06 18:12:56.964 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi)
+2025-02-06 18:12:56.965 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi)
+2025-02-06 18:12:56.969 +01:00 [DBG] Attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' ...
+2025-02-06 18:12:56.971 +01:00 [DBG] Attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' using the name '' in request data ...
+2025-02-06 18:12:56.972 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-02-06 18:12:56.981 +01:00 [DBG] Connection id "0HNA6Q5PI53BU", Request id "0HNA6Q5PI53BU:0000000B": started reading request body.
+2025-02-06 18:12:56.982 +01:00 [DBG] Connection id "0HNA6Q5PI53BU", Request id "0HNA6Q5PI53BU:0000000B": done reading request body.
+2025-02-06 18:12:56.998 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'P7CreateRestApi.Models.LoginModel'
+2025-02-06 18:12:57.000 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:12:57.001 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:12:57.002 +01:00 [DBG] Attempting to validate the bound parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' ...
+2025-02-06 18:12:57.007 +01:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:12:57.011 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:12:57.013 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2025-02-06 18:12:57.015 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.Email (string) MaxLength(256), 3], [Property: User.EmailConfirmed (bool) Required, 4], [Property: User.FullName (string) Required, 5], [Property: User.LockoutEnabled (bool) Required, 6], [Property: User.LockoutEnd (DateTimeOffset?), 7], [Property: User.NormalizedEmail (string) Index MaxLength(256), 8], [Property: User.NormalizedUserName (string) Index MaxLength(256), 9], [Property: User.Password (string) Required, 10], [Property: User.PasswordHash (string), 11], [Property: User.PhoneNumber (string), 12], [Property: User.PhoneNumberConfirmed (bool) Required, 13], [Property: User.Role (string) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UserName (string) MaxLength(256), 17] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FullName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.Password, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.Role, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:12:57.017 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:57.017 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:57.018 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.018 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.019 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:12:57.022 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:12:57.023 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:12:57.024 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:57.024 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.025 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.029 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:57.030 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:57.031 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.032 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.033 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:12:57.034 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:12:57.035 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:57.036 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.036 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.054 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:57.055 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:57.055 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.056 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.057 +01:00 [DBG] Executing DbCommand [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:12:57.058 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:12:57.060 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:57.060 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.061 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.062 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:57.063 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:57.064 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.064 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.065 +01:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:12:57.066 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:12:57.067 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:57.068 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.068 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.069 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:57.069 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:57.070 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.071 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.071 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:12:57.073 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:12:57.074 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:12:57.075 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:57.075 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.075 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.076 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:12:57.077 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:12:57.077 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.078 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.079 +01:00 [DBG] Executing DbCommand [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:12:57.080 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:12:57.081 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:12:57.082 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.082 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:12:57.100 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-02-06 18:12:57.135 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-06 18:12:57.138 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-06 18:12:57.139 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-06 18:12:57.139 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-06 18:12:57.140 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-06 18:12:57.141 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-06 18:12:57.161 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi) in 193.6294ms
+2025-02-06 18:12:57.163 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:12:57.164 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:12:57.165 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7210/Login/login application/json 50 - 200 - application/json;+charset=utf-8 235.0973ms
+2025-02-06 18:13:13.603 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:13:13.605 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:13:13.605 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:13:13.606 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:13:13.607 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:13:13.618 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:13:13.619 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:13:13.620 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:13:13.620 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:13:13.621 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 18.2655ms
+2025-02-06 18:17:24.501 +01:00 [INF] Attempting to migrate database...
+2025-02-06 18:17:24.635 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-06 18:17:25.054 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<int>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-02-06 18:17:25.057 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<int>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-02-06 18:17:25.272 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:17:25.323 +01:00 [DBG] Migrating using database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.329 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.537 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.546 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:17:25.553 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (6ms).
+2025-02-06 18:17:25.564 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:17:25.590 +01:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:17:25.593 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.605 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.613 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:17:25.614 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:17:25.615 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.617 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.619 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:17:25.644 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:17:25.645 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.647 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.649 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.650 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.651 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:17:25.652 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-06 18:17:25.653 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:17:25.656 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:17:25.657 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.658 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.659 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:17:25.659 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:17:25.660 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.661 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.662 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:17:25.663 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:17:25.664 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.665 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.677 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:17:25.678 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:17:25.679 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.680 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.681 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:17:25.684 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:17:25.689 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:17:25.689 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.690 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.700 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-02-06 18:17:25.701 +01:00 [INF] Database migration completed. Starting database seeding...
+2025-02-06 18:17:25.726 +01:00 [INF] User profile is available. Using 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 18:17:25.736 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:17:25.776 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-02-06 18:17:25.959 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AspNetUsers AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:17:25.991 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:17:25.992 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:17:25.992 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.993 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:25.994 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:17:25.997 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:17:26.000 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:17:26.000 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.001 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.002 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .Any()'
+2025-02-06 18:17:26.003 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Trades AS t)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:17:26.004 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:17:26.005 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:17:26.005 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.006 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.007 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:17:26.008 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:17:26.010 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:17:26.010 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.011 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.011 +01:00 [DBG] Compiling query expression: 
+'DbSet<Rating>()
+    .Any()'
+2025-02-06 18:17:26.013 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Ratings AS r)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:17:26.014 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:17:26.014 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:17:26.015 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.016 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.017 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:17:26.019 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:17:26.020 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:17:26.020 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.021 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:17:26.023 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:17:26.025 +01:00 [INF] Database seeding completed successfully.
+2025-02-06 18:17:26.026 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:17:26.067 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-06 18:17:26.103 +01:00 [DBG] Hosting starting
+2025-02-06 18:17:26.105 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-247b0a39-f609-48fc-b6b7-7a33f372eb2e.xml'.
+2025-02-06 18:17:26.108 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-725444c4-37ef-4daf-931e-d4f9619f3a6a.xml'.
+2025-02-06 18:17:26.108 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-db019ecf-993b-438c-a7c8-067794bbe92c.xml'.
+2025-02-06 18:17:26.112 +01:00 [DBG] Found key {247b0a39-f609-48fc-b6b7-7a33f372eb2e}.
+2025-02-06 18:17:26.115 +01:00 [DBG] Found key {725444c4-37ef-4daf-931e-d4f9619f3a6a}.
+2025-02-06 18:17:26.116 +01:00 [DBG] Found key {db019ecf-993b-438c-a7c8-067794bbe92c}.
+2025-02-06 18:17:26.122 +01:00 [DBG] Considering key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} with expiration date 2025-04-22 15:40:52Z as default key.
+2025-02-06 18:17:26.124 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:17:26.125 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-02-06 18:17:26.127 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:17:26.128 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-02-06 18:17:26.130 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-02-06 18:17:26.133 +01:00 [DBG] Using key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} as the default key.
+2025-02-06 18:17:26.134 +01:00 [DBG] Key ring with default key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} was loaded during application startup.
+2025-02-06 18:17:26.218 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: A3216B6127E90058C2C66916F8E72F95CC8E8F22)
+2025-02-06 18:17:26.254 +01:00 [INF] Now listening on: https://localhost:7210
+2025-02-06 18:17:26.255 +01:00 [INF] Now listening on: http://localhost:5267
+2025-02-06 18:17:26.255 +01:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2025-02-06 18:17:26.256 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-06 18:17:26.257 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-06 18:17:26.257 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 18:17:26.258 +01:00 [INF] Hosting environment: Development
+2025-02-06 18:17:26.258 +01:00 [INF] Content root path: S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\P7CreateRestApi\
+2025-02-06 18:17:26.259 +01:00 [DBG] Hosting started
+2025-02-06 18:17:26.268 +01:00 [DBG] Connection id "0HNA6Q8GBLENF" accepted.
+2025-02-06 18:17:26.268 +01:00 [DBG] Connection id "0HNA6Q8GBLENE" accepted.
+2025-02-06 18:17:26.269 +01:00 [DBG] Connection id "0HNA6Q8GBLENF" started.
+2025-02-06 18:17:26.269 +01:00 [DBG] Connection id "0HNA6Q8GBLENE" started.
+2025-02-06 18:17:26.279 +01:00 [DBG] Connection id "0HNA6Q8GBLENE" received FIN.
+2025-02-06 18:17:26.279 +01:00 [DBG] Connection id "0HNA6Q8GBLENF" received FIN.
+2025-02-06 18:17:26.302 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:17:26.302 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:17:26.328 +01:00 [DBG] Connection id "0HNA6Q8GBLENF" stopped.
+2025-02-06 18:17:26.328 +01:00 [DBG] Connection id "0HNA6Q8GBLENE" stopped.
+2025-02-06 18:17:26.331 +01:00 [DBG] Connection id "0HNA6Q8GBLENF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:17:26.331 +01:00 [DBG] Connection id "0HNA6Q8GBLENE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:17:26.475 +01:00 [DBG] Connection id "0HNA6Q8GBLENG" accepted.
+2025-02-06 18:17:26.476 +01:00 [DBG] Connection id "0HNA6Q8GBLENG" started.
+2025-02-06 18:17:26.502 +01:00 [DBG] Connection 0HNA6Q8GBLENG established using the following protocol: "Tls13"
+2025-02-06 18:17:26.551 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2025-02-06 18:17:26.632 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-06 18:17:26.650 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-06 18:17:26.651 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:17:26.788 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-02-06 18:17:26.790 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-02-06 18:17:26.804 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-02-06 18:17:26.805 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-02-06 18:17:26.810 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 262.1012ms
+2025-02-06 18:17:26.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2025-02-06 18:17:26.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2025-02-06 18:17:26.854 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 3.9587ms
+2025-02-06 18:17:26.894 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.3097ms
+2025-02-06 18:17:26.953 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2025-02-06 18:17:26.955 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-06 18:17:26.955 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:17:27.037 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.1501ms
+2025-02-06 18:17:31.714 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:17:31.720 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:17:31.721 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:17:31.722 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:17:31.724 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:17:31.740 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:17:31.784 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:17:31.788 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:17:31.793 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:17:31.797 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 82.6498ms
+2025-02-06 18:18:07.152 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7210/Login/login application/json 50
+2025-02-06 18:18:07.160 +01:00 [DBG] 1 candidate(s) found for the request path '/Login/login'
+2025-02-06 18:18:07.160 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)' with route pattern 'Login/login' is valid for the request path '/Login/login'
+2025-02-06 18:18:07.161 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:18:07.162 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:18:07.163 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:18:07.164 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:18:07.165 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:18:07.189 +01:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P7CreateRestApi.Models.LoginModel) on controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi).
+2025-02-06 18:18:07.190 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-06 18:18:07.191 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-06 18:18:07.192 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-06 18:18:07.193 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-06 18:18:07.194 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-06 18:18:07.195 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi)
+2025-02-06 18:18:07.196 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi)
+2025-02-06 18:18:07.199 +01:00 [DBG] Attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' ...
+2025-02-06 18:18:07.201 +01:00 [DBG] Attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' using the name '' in request data ...
+2025-02-06 18:18:07.202 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-02-06 18:18:07.211 +01:00 [DBG] Connection id "0HNA6Q8GBLENG", Request id "0HNA6Q8GBLENG:0000000B": started reading request body.
+2025-02-06 18:18:07.212 +01:00 [DBG] Connection id "0HNA6Q8GBLENG", Request id "0HNA6Q8GBLENG:0000000B": done reading request body.
+2025-02-06 18:18:07.229 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'P7CreateRestApi.Models.LoginModel'
+2025-02-06 18:18:07.230 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:18:07.230 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:18:07.231 +01:00 [DBG] Attempting to validate the bound parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' ...
+2025-02-06 18:18:07.236 +01:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:18:07.271 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:18:07.280 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2025-02-06 18:18:07.339 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.Email (string) MaxLength(256), 3], [Property: User.EmailConfirmed (bool) Required, 4], [Property: User.FullName (string) Required, 5], [Property: User.LockoutEnabled (bool) Required, 6], [Property: User.LockoutEnd (DateTimeOffset?), 7], [Property: User.NormalizedEmail (string) Index MaxLength(256), 8], [Property: User.NormalizedUserName (string) Index MaxLength(256), 9], [Property: User.Password (string) Required, 10], [Property: User.PasswordHash (string), 11], [Property: User.PhoneNumber (string), 12], [Property: User.PhoneNumberConfirmed (bool) Required, 13], [Property: User.Role (string) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UserName (string) MaxLength(256), 17] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FullName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.Password, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.Role, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:18:07.364 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:18:07.365 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:18:07.374 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.378 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.383 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:18:07.426 +01:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:18:07.466 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:18:07.503 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:18:07.507 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.509 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.513 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:18:07.513 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:18:07.514 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.515 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.515 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:18:07.517 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:18:07.519 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:18:07.519 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.520 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.553 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserClaim<int>>()
+    .Where(uc => uc.UserId.Equals(__user_Id_0))
+    .Select(c => c.ToClaim())'
+2025-02-06 18:18:07.587 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: IdentityUserClaim<int>.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUserClaim<int>.ClaimType (string), 1], [Property: IdentityUserClaim<int>.ClaimValue (string), 2], [Property: IdentityUserClaim<int>.UserId (int) Required FK Index, 3] }
+        SELECT a.Id, a.ClaimType, a.ClaimValue, a.UserId
+        FROM AspNetUserClaims AS a
+        WHERE a.UserId == @__user_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:18:07.589 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:18:07.589 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:18:07.590 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.590 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.592 +01:00 [DBG] Executing DbCommand [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:18:07.594 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:18:07.596 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:18:07.596 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.597 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.609 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserRole<int>>()
+    .Join(
+        inner: DbSet<Role>(), 
+        outerKeySelector: userRole => userRole.RoleId, 
+        innerKeySelector: role => role.Id, 
+        resultSelector: (userRole, role) => new { 
+            userRole = userRole, 
+            role = role
+         })
+    .Where(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.userRole.UserId.Equals(__userId_0))
+    .Select(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.role.Name)'
+2025-02-06 18:18:07.626 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<string>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT a0.Name
+        FROM AspNetUserRoles AS a
+        INNER JOIN AspNetRoles AS a0 ON a.RoleId == a0.Id
+        WHERE a.UserId == @__userId_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, string>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:18:07.628 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:18:07.628 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:18:07.629 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.630 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.631 +01:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:18:07.633 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:18:07.635 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:18:07.635 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.636 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.639 +01:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .FirstOrDefault(r => r.NormalizedName == __normalizedName_0)'
+2025-02-06 18:18:07.641 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: new SingleQueryingEnumerable<Role>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.ConcurrencyStamp (string) Concurrency, 1], [Property: Role.Name (string) MaxLength(256), 2], [Property: Role.NormalizedName (string) Index MaxLength(256), 3] }
+            SELECT TOP(1) a.Id, a.ConcurrencyStamp, a.Name, a.NormalizedName
+            FROM AspNetRoles AS a
+            WHERE a.NormalizedName == @__normalizedName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Role>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:18:07.643 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:18:07.643 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:18:07.644 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.644 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.645 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:18:07.647 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:18:07.652 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:18:07.655 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:18:07.656 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.657 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.660 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityRoleClaim<int>>()
+    .Where(rc => rc.RoleId.Equals(__role_Id_0))
+    .Select(c => new Claim(
+        c.ClaimType, 
+        c.ClaimValue
+    ))'
+2025-02-06 18:18:07.663 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+        SELECT a.ClaimType, a.ClaimValue
+        FROM AspNetRoleClaims AS a
+        WHERE a.RoleId == @__role_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:18:07.664 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:18:07.664 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:18:07.665 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.666 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.666 +01:00 [DBG] Executing DbCommand [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:18:07.669 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:18:07.670 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:18:07.670 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.671 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:18:07.680 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-02-06 18:18:07.715 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-06 18:18:07.718 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-06 18:18:07.718 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-06 18:18:07.719 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-06 18:18:07.720 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-06 18:18:07.720 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-06 18:18:07.740 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi) in 542.5972ms
+2025-02-06 18:18:07.742 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:18:07.745 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:18:07.747 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7210/Login/login application/json 50 - 200 - application/json;+charset=utf-8 596.0676ms
+2025-02-06 18:18:19.152 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:18:19.153 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:18:19.154 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:18:19.157 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:18:19.157 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:18:19.166 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:18:19.167 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:18:19.168 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:18:19.168 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:18:19.169 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 16.8561ms
+2025-02-06 18:18:29.988 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:18:29.989 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:18:29.989 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:18:29.990 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:18:29.991 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:18:29.991 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:18:29.993 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:18:29.994 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:18:29.995 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:18:29.996 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 7.7241ms
+2025-02-06 18:19:37.888 +01:00 [INF] Attempting to migrate database...
+2025-02-06 18:19:38.020 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-06 18:19:38.417 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<int>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-02-06 18:19:38.419 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<int>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-02-06 18:19:38.648 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:19:38.708 +01:00 [DBG] Migrating using database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:38.715 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:38.935 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:38.944 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:19:38.951 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2025-02-06 18:19:38.962 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:19:38.987 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:19:38.991 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:38.997 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.004 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:19:39.004 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:19:39.005 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.006 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.008 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:19:39.024 +01:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:19:39.025 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.026 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.027 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.028 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.029 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:19:39.029 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-06 18:19:39.030 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:19:39.032 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:19:39.032 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.033 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.034 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:19:39.034 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:19:39.035 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.035 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.036 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:19:39.037 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:19:39.038 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.038 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.049 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:19:39.049 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:19:39.050 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.051 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.052 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:19:39.055 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:19:39.059 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:19:39.060 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.061 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.071 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-02-06 18:19:39.072 +01:00 [INF] Database migration completed. Starting database seeding...
+2025-02-06 18:19:39.098 +01:00 [INF] User profile is available. Using 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 18:19:39.106 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:19:39.150 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-02-06 18:19:39.324 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AspNetUsers AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:19:39.358 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:19:39.359 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:19:39.360 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.360 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.361 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:19:39.363 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:19:39.366 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:19:39.367 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.367 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.368 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .Any()'
+2025-02-06 18:19:39.370 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Trades AS t)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:19:39.370 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:19:39.371 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:19:39.372 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.372 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.373 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:19:39.375 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:19:39.376 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:19:39.376 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.377 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.377 +01:00 [DBG] Compiling query expression: 
+'DbSet<Rating>()
+    .Any()'
+2025-02-06 18:19:39.379 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Ratings AS r)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:19:39.379 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:19:39.380 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:19:39.381 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.381 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.382 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:19:39.384 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:19:39.385 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:19:39.385 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.385 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:19:39.388 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:19:39.389 +01:00 [INF] Database seeding completed successfully.
+2025-02-06 18:19:39.390 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:19:39.427 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-06 18:19:39.460 +01:00 [DBG] Hosting starting
+2025-02-06 18:19:39.462 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-247b0a39-f609-48fc-b6b7-7a33f372eb2e.xml'.
+2025-02-06 18:19:39.464 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-725444c4-37ef-4daf-931e-d4f9619f3a6a.xml'.
+2025-02-06 18:19:39.465 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-db019ecf-993b-438c-a7c8-067794bbe92c.xml'.
+2025-02-06 18:19:39.469 +01:00 [DBG] Found key {247b0a39-f609-48fc-b6b7-7a33f372eb2e}.
+2025-02-06 18:19:39.471 +01:00 [DBG] Found key {725444c4-37ef-4daf-931e-d4f9619f3a6a}.
+2025-02-06 18:19:39.472 +01:00 [DBG] Found key {db019ecf-993b-438c-a7c8-067794bbe92c}.
+2025-02-06 18:19:39.477 +01:00 [DBG] Considering key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} with expiration date 2025-04-22 15:40:52Z as default key.
+2025-02-06 18:19:39.479 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:19:39.480 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-02-06 18:19:39.481 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:19:39.482 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-02-06 18:19:39.484 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-02-06 18:19:39.486 +01:00 [DBG] Using key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} as the default key.
+2025-02-06 18:19:39.487 +01:00 [DBG] Key ring with default key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} was loaded during application startup.
+2025-02-06 18:19:39.569 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: A3216B6127E90058C2C66916F8E72F95CC8E8F22)
+2025-02-06 18:19:39.606 +01:00 [INF] Now listening on: https://localhost:7210
+2025-02-06 18:19:39.607 +01:00 [INF] Now listening on: http://localhost:5267
+2025-02-06 18:19:39.607 +01:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2025-02-06 18:19:39.608 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-06 18:19:39.608 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-06 18:19:39.609 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 18:19:39.609 +01:00 [INF] Hosting environment: Development
+2025-02-06 18:19:39.610 +01:00 [INF] Content root path: S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\P7CreateRestApi\
+2025-02-06 18:19:39.610 +01:00 [DBG] Hosting started
+2025-02-06 18:19:39.807 +01:00 [DBG] Connection id "0HNA6Q9O567LB" accepted.
+2025-02-06 18:19:39.809 +01:00 [DBG] Connection id "0HNA6Q9O567LC" accepted.
+2025-02-06 18:19:39.809 +01:00 [DBG] Connection id "0HNA6Q9O567LB" started.
+2025-02-06 18:19:39.809 +01:00 [DBG] Connection id "0HNA6Q9O567LC" started.
+2025-02-06 18:19:39.825 +01:00 [DBG] Connection id "0HNA6Q9O567LB" received FIN.
+2025-02-06 18:19:39.825 +01:00 [DBG] Connection id "0HNA6Q9O567LC" received FIN.
+2025-02-06 18:19:39.845 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:19:39.845 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:19:39.870 +01:00 [DBG] Connection id "0HNA6Q9O567LC" stopped.
+2025-02-06 18:19:39.870 +01:00 [DBG] Connection id "0HNA6Q9O567LB" stopped.
+2025-02-06 18:19:39.873 +01:00 [DBG] Connection id "0HNA6Q9O567LB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:19:39.873 +01:00 [DBG] Connection id "0HNA6Q9O567LC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:19:40.072 +01:00 [DBG] Connection id "0HNA6Q9O567LD" accepted.
+2025-02-06 18:19:40.073 +01:00 [DBG] Connection id "0HNA6Q9O567LD" started.
+2025-02-06 18:19:40.101 +01:00 [DBG] Connection 0HNA6Q9O567LD established using the following protocol: "Tls13"
+2025-02-06 18:19:40.159 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2025-02-06 18:19:40.241 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-06 18:19:40.261 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-06 18:19:40.262 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:19:40.398 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-02-06 18:19:40.401 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-02-06 18:19:40.415 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-02-06 18:19:40.417 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-02-06 18:19:40.422 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 265.8476ms
+2025-02-06 18:19:40.480 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2025-02-06 18:19:40.480 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2025-02-06 18:19:40.485 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 5.1400ms
+2025-02-06 18:19:40.528 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.4678ms
+2025-02-06 18:19:40.583 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2025-02-06 18:19:40.584 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-06 18:19:40.585 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:19:40.672 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.6737ms
+2025-02-06 18:19:53.495 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:19:53.502 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:19:53.504 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:19:53.505 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:19:53.507 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:19:53.523 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:19:53.574 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:19:53.579 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:19:53.585 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:19:53.589 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 93.3705ms
+2025-02-06 18:25:44.960 +01:00 [INF] Attempting to migrate database...
+2025-02-06 18:25:45.101 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-06 18:25:45.497 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<int>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-02-06 18:25:45.500 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<int>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-02-06 18:25:45.763 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:25:45.815 +01:00 [DBG] Migrating using database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:45.821 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.044 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.053 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:25:46.061 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2025-02-06 18:25:46.074 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:25:46.101 +01:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:25:46.105 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.113 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.120 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:25:46.120 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:25:46.121 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.123 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.124 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:25:46.142 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:25:46.143 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.144 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.146 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.147 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.148 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:25:46.148 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-06 18:25:46.149 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:25:46.152 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:25:46.153 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.154 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.155 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:25:46.155 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:25:46.156 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.157 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.158 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:25:46.159 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:25:46.160 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.161 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.173 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:46.174 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:46.175 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.176 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.177 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:25:46.182 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:25:46.187 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:46.187 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.188 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.201 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-02-06 18:25:46.202 +01:00 [INF] Database migration completed. Starting database seeding...
+2025-02-06 18:25:46.228 +01:00 [INF] User profile is available. Using 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 18:25:46.239 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:25:46.282 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-02-06 18:25:46.465 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AspNetUsers AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:25:46.499 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:46.500 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:46.500 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.501 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.502 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:25:46.504 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:25:46.508 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:46.511 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.512 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.513 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .Any()'
+2025-02-06 18:25:46.515 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Trades AS t)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:25:46.517 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:46.517 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:46.518 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.519 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.519 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:25:46.521 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:25:46.523 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:46.524 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.525 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.526 +01:00 [DBG] Compiling query expression: 
+'DbSet<Rating>()
+    .Any()'
+2025-02-06 18:25:46.527 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Ratings AS r)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:25:46.528 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:46.529 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:46.529 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.530 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.531 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:25:46.533 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:25:46.534 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:46.534 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.535 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:46.537 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:25:46.539 +01:00 [INF] Database seeding completed successfully.
+2025-02-06 18:25:46.540 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:25:46.583 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-06 18:25:46.623 +01:00 [DBG] Hosting starting
+2025-02-06 18:25:46.625 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-247b0a39-f609-48fc-b6b7-7a33f372eb2e.xml'.
+2025-02-06 18:25:46.627 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-725444c4-37ef-4daf-931e-d4f9619f3a6a.xml'.
+2025-02-06 18:25:46.628 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-db019ecf-993b-438c-a7c8-067794bbe92c.xml'.
+2025-02-06 18:25:46.632 +01:00 [DBG] Found key {247b0a39-f609-48fc-b6b7-7a33f372eb2e}.
+2025-02-06 18:25:46.635 +01:00 [DBG] Found key {725444c4-37ef-4daf-931e-d4f9619f3a6a}.
+2025-02-06 18:25:46.636 +01:00 [DBG] Found key {db019ecf-993b-438c-a7c8-067794bbe92c}.
+2025-02-06 18:25:46.641 +01:00 [DBG] Considering key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} with expiration date 2025-04-22 15:40:52Z as default key.
+2025-02-06 18:25:46.643 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:25:46.644 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-02-06 18:25:46.645 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:25:46.647 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-02-06 18:25:46.649 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-02-06 18:25:46.651 +01:00 [DBG] Using key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} as the default key.
+2025-02-06 18:25:46.652 +01:00 [DBG] Key ring with default key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} was loaded during application startup.
+2025-02-06 18:25:46.744 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: A3216B6127E90058C2C66916F8E72F95CC8E8F22)
+2025-02-06 18:25:46.780 +01:00 [INF] Now listening on: https://localhost:7210
+2025-02-06 18:25:46.781 +01:00 [INF] Now listening on: http://localhost:5267
+2025-02-06 18:25:46.781 +01:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2025-02-06 18:25:46.782 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-06 18:25:46.782 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-06 18:25:46.782 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 18:25:46.783 +01:00 [INF] Hosting environment: Development
+2025-02-06 18:25:46.783 +01:00 [INF] Content root path: S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\P7CreateRestApi\
+2025-02-06 18:25:46.784 +01:00 [DBG] Hosting started
+2025-02-06 18:25:46.878 +01:00 [DBG] Connection id "0HNA6QD5HRD3E" accepted.
+2025-02-06 18:25:46.878 +01:00 [DBG] Connection id "0HNA6QD5HRD3D" accepted.
+2025-02-06 18:25:46.879 +01:00 [DBG] Connection id "0HNA6QD5HRD3D" started.
+2025-02-06 18:25:46.879 +01:00 [DBG] Connection id "0HNA6QD5HRD3E" started.
+2025-02-06 18:25:46.887 +01:00 [DBG] Connection id "0HNA6QD5HRD3E" received FIN.
+2025-02-06 18:25:46.887 +01:00 [DBG] Connection id "0HNA6QD5HRD3D" received FIN.
+2025-02-06 18:25:46.904 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:25:46.904 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:25:46.932 +01:00 [DBG] Connection id "0HNA6QD5HRD3E" stopped.
+2025-02-06 18:25:46.932 +01:00 [DBG] Connection id "0HNA6QD5HRD3D" stopped.
+2025-02-06 18:25:46.936 +01:00 [DBG] Connection id "0HNA6QD5HRD3D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:25:46.936 +01:00 [DBG] Connection id "0HNA6QD5HRD3E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:25:47.028 +01:00 [DBG] Connection id "0HNA6QD5HRD3F" accepted.
+2025-02-06 18:25:47.029 +01:00 [DBG] Connection id "0HNA6QD5HRD3F" started.
+2025-02-06 18:25:47.053 +01:00 [DBG] Connection 0HNA6QD5HRD3F established using the following protocol: "Tls13"
+2025-02-06 18:25:47.104 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2025-02-06 18:25:47.191 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-06 18:25:47.210 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-06 18:25:47.211 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:25:47.352 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-02-06 18:25:47.354 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-02-06 18:25:47.370 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-02-06 18:25:47.371 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-02-06 18:25:47.377 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 276.1463ms
+2025-02-06 18:25:47.433 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2025-02-06 18:25:47.433 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2025-02-06 18:25:47.438 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.3945ms
+2025-02-06 18:25:47.478 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.1906ms
+2025-02-06 18:25:47.538 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2025-02-06 18:25:47.540 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-06 18:25:47.540 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:25:47.625 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.4510ms
+2025-02-06 18:25:51.264 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:25:51.271 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:25:51.273 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:25:51.274 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:25:51.275 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:25:51.323 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:25:51.325 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:25:51.329 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:25:51.334 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:25:51.335 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 71.2332ms
+2025-02-06 18:25:57.314 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7210/Login/login application/json 50
+2025-02-06 18:25:57.315 +01:00 [DBG] 1 candidate(s) found for the request path '/Login/login'
+2025-02-06 18:25:57.315 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)' with route pattern 'Login/login' is valid for the request path '/Login/login'
+2025-02-06 18:25:57.317 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:25:57.318 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:25:57.319 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:25:57.319 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:25:57.320 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:25:57.344 +01:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(P7CreateRestApi.Models.LoginModel) on controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi).
+2025-02-06 18:25:57.346 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-06 18:25:57.346 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-06 18:25:57.347 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-06 18:25:57.348 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-06 18:25:57.349 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-06 18:25:57.350 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi)
+2025-02-06 18:25:57.354 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.LoginController (P7CreateRestApi)
+2025-02-06 18:25:57.366 +01:00 [DBG] Attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' ...
+2025-02-06 18:25:57.369 +01:00 [DBG] Attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' using the name '' in request data ...
+2025-02-06 18:25:57.370 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-02-06 18:25:57.379 +01:00 [DBG] Connection id "0HNA6QD5HRD3F", Request id "0HNA6QD5HRD3F:0000000B": started reading request body.
+2025-02-06 18:25:57.380 +01:00 [DBG] Connection id "0HNA6QD5HRD3F", Request id "0HNA6QD5HRD3F:0000000B": done reading request body.
+2025-02-06 18:25:57.396 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'P7CreateRestApi.Models.LoginModel'
+2025-02-06 18:25:57.397 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:25:57.398 +01:00 [DBG] Done attempting to bind parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:25:57.399 +01:00 [DBG] Attempting to validate the bound parameter 'model' of type 'P7CreateRestApi.Models.LoginModel' ...
+2025-02-06 18:25:57.405 +01:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'P7CreateRestApi.Models.LoginModel'.
+2025-02-06 18:25:57.440 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:25:57.449 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2025-02-06 18:25:57.509 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.Email (string) MaxLength(256), 3], [Property: User.EmailConfirmed (bool) Required, 4], [Property: User.FullName (string) Required, 5], [Property: User.LockoutEnabled (bool) Required, 6], [Property: User.LockoutEnd (DateTimeOffset?), 7], [Property: User.NormalizedEmail (string) Index MaxLength(256), 8], [Property: User.NormalizedUserName (string) Index MaxLength(256), 9], [Property: User.Password (string) Required, 10], [Property: User.PasswordHash (string), 11], [Property: User.PhoneNumber (string), 12], [Property: User.PhoneNumberConfirmed (bool) Required, 13], [Property: User.Role (string) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UserName (string) MaxLength(256), 17] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FullName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.Password, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.Role, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:25:57.533 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:57.534 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:57.543 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.547 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.552 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:25:57.594 +01:00 [INF] Executed DbCommand (46ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:25:57.632 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:25:57.669 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:57.672 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.674 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.678 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:57.679 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:57.679 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.680 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.680 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:25:57.682 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-06 18:25:57.684 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:57.684 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.685 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.715 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserClaim<int>>()
+    .Where(uc => uc.UserId.Equals(__user_Id_0))
+    .Select(c => c.ToClaim())'
+2025-02-06 18:25:57.749 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: IdentityUserClaim<int>.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUserClaim<int>.ClaimType (string), 1], [Property: IdentityUserClaim<int>.ClaimValue (string), 2], [Property: IdentityUserClaim<int>.UserId (int) Required FK Index, 3] }
+        SELECT a.Id, a.ClaimType, a.ClaimValue, a.UserId
+        FROM AspNetUserClaims AS a
+        WHERE a.UserId == @__user_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:25:57.750 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:57.751 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:57.751 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.752 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.753 +01:00 [DBG] Executing DbCommand [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:25:57.756 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-06 18:25:57.758 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:57.759 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.760 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.771 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUserRole<int>>()
+    .Join(
+        inner: DbSet<Role>(), 
+        outerKeySelector: userRole => userRole.RoleId, 
+        innerKeySelector: role => role.Id, 
+        resultSelector: (userRole, role) => new { 
+            userRole = userRole, 
+            role = role
+         })
+    .Where(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.userRole.UserId.Equals(__userId_0))
+    .Select(<>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.role.Name)'
+2025-02-06 18:25:57.788 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<string>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT a0.Name
+        FROM AspNetUserRoles AS a
+        INNER JOIN AspNetRoles AS a0 ON a.RoleId == a0.Id
+        WHERE a.UserId == @__userId_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, string>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:25:57.790 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:57.791 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:57.791 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.792 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.793 +01:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:25:57.796 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-02-06 18:25:57.797 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:57.797 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.798 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.802 +01:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .FirstOrDefault(r => r.NormalizedName == __normalizedName_0)'
+2025-02-06 18:25:57.804 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: new SingleQueryingEnumerable<Role>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.ConcurrencyStamp (string) Concurrency, 1], [Property: Role.Name (string) MaxLength(256), 2], [Property: Role.NormalizedName (string) Index MaxLength(256), 3] }
+            SELECT TOP(1) a.Id, a.ConcurrencyStamp, a.Name, a.NormalizedName
+            FROM AspNetRoles AS a
+            WHERE a.NormalizedName == @__normalizedName_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Role>, 
+        Dot.Net.WebApi.Data.LocalDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-02-06 18:25:57.805 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:57.806 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:57.807 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.807 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.808 +01:00 [DBG] Executing DbCommand [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:25:57.810 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-02-06 18:25:57.814 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-06 18:25:57.818 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:57.819 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.819 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.823 +01:00 [DBG] Compiling query expression: 
+'DbSet<IdentityRoleClaim<int>>()
+    .Where(rc => rc.RoleId.Equals(__role_Id_0))
+    .Select(c => new Claim(
+        c.ClaimType, 
+        c.ClaimValue
+    ))'
+2025-02-06 18:25:57.826 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+        SELECT a.ClaimType, a.ClaimValue
+        FROM AspNetRoleClaims AS a
+        WHERE a.RoleId == @__role_Id_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-06 18:25:57.826 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:25:57.827 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:25:57.828 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.828 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.829 +01:00 [DBG] Executing DbCommand [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:25:57.831 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-02-06 18:25:57.832 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:25:57.833 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.834 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:25:57.846 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-02-06 18:25:57.881 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-06 18:25:57.883 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-06 18:25:57.884 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-06 18:25:57.884 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-06 18:25:57.885 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-06 18:25:57.886 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-06 18:25:57.904 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi) in 551.6456ms
+2025-02-06 18:25:57.906 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.LoginController.Login (P7CreateRestApi)'
+2025-02-06 18:25:57.911 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:25:57.913 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7210/Login/login application/json 50 - 200 - application/json;+charset=utf-8 599.3693ms
+2025-02-06 18:26:12.625 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:26:12.626 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:26:12.627 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:26:12.628 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:26:12.628 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:26:12.629 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:26:12.631 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:26:12.632 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:26:12.632 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:26:12.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 7.9459ms
+2025-02-06 18:26:19.375 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:26:19.376 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:26:19.376 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:26:19.377 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:26:19.378 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:26:19.378 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:26:19.379 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:26:19.380 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:26:19.380 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:26:19.381 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 5.4514ms
+2025-02-06 18:28:52.597 +01:00 [INF] Attempting to migrate database...
+2025-02-06 18:28:52.750 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-06 18:28:53.187 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<int>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-02-06 18:28:53.189 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<int>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-02-06 18:28:53.442 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:28:53.496 +01:00 [DBG] Migrating using database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.505 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.723 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.734 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:28:53.741 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2025-02-06 18:28:53.752 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:28:53.778 +01:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:28:53.783 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.789 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.796 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:28:53.796 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:28:53.797 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.798 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.800 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:28:53.817 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:28:53.819 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.820 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.821 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.822 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.822 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-06 18:28:53.823 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-06 18:28:53.823 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:28:53.825 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-06 18:28:53.826 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.827 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.827 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-06 18:28:53.828 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-06 18:28:53.829 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.829 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.830 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:28:53.831 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-06 18:28:53.832 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.832 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.844 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:28:53.844 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:28:53.845 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.846 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.847 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:28:53.851 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-06 18:28:53.856 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:28:53.857 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.859 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:53.872 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-02-06 18:28:53.872 +01:00 [INF] Database migration completed. Starting database seeding...
+2025-02-06 18:28:53.905 +01:00 [INF] User profile is available. Using 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-06 18:28:53.919 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-06 18:28:53.969 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-02-06 18:28:54.166 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AspNetUsers AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:28:54.205 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:28:54.206 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:28:54.206 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.207 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.208 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:28:54.212 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:28:54.216 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:28:54.216 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.217 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.219 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .Any()'
+2025-02-06 18:28:54.222 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Trades AS t)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:28:54.223 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:28:54.223 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:28:54.224 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.224 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.225 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:28:54.227 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:28:54.229 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:28:54.229 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.230 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.231 +01:00 [DBG] Compiling query expression: 
+'DbSet<Rating>()
+    .Any()'
+2025-02-06 18:28:54.233 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Ratings AS r)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-06 18:28:54.233 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-06 18:28:54.234 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-06 18:28:54.234 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.235 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.236 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:28:54.238 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-06 18:28:54.239 +01:00 [DBG] A data reader was disposed.
+2025-02-06 18:28:54.239 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.240 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-06 18:28:54.242 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:28:54.243 +01:00 [INF] Database seeding completed successfully.
+2025-02-06 18:28:54.244 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-06 18:28:54.288 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-06 18:28:54.332 +01:00 [DBG] Hosting starting
+2025-02-06 18:28:54.335 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-247b0a39-f609-48fc-b6b7-7a33f372eb2e.xml'.
+2025-02-06 18:28:54.337 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-725444c4-37ef-4daf-931e-d4f9619f3a6a.xml'.
+2025-02-06 18:28:54.338 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-db019ecf-993b-438c-a7c8-067794bbe92c.xml'.
+2025-02-06 18:28:54.342 +01:00 [DBG] Found key {247b0a39-f609-48fc-b6b7-7a33f372eb2e}.
+2025-02-06 18:28:54.346 +01:00 [DBG] Found key {725444c4-37ef-4daf-931e-d4f9619f3a6a}.
+2025-02-06 18:28:54.347 +01:00 [DBG] Found key {db019ecf-993b-438c-a7c8-067794bbe92c}.
+2025-02-06 18:28:54.353 +01:00 [DBG] Considering key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} with expiration date 2025-04-22 15:40:52Z as default key.
+2025-02-06 18:28:54.356 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:28:54.357 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-02-06 18:28:54.358 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-06 18:28:54.360 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-02-06 18:28:54.362 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-02-06 18:28:54.364 +01:00 [DBG] Using key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} as the default key.
+2025-02-06 18:28:54.365 +01:00 [DBG] Key ring with default key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} was loaded during application startup.
+2025-02-06 18:28:54.453 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: A3216B6127E90058C2C66916F8E72F95CC8E8F22)
+2025-02-06 18:28:54.491 +01:00 [INF] Now listening on: https://localhost:7210
+2025-02-06 18:28:54.491 +01:00 [INF] Now listening on: http://localhost:5267
+2025-02-06 18:28:54.492 +01:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2025-02-06 18:28:54.492 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-06 18:28:54.493 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-06 18:28:54.493 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-06 18:28:54.494 +01:00 [INF] Hosting environment: Development
+2025-02-06 18:28:54.494 +01:00 [INF] Content root path: S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\P7CreateRestApi\
+2025-02-06 18:28:54.494 +01:00 [DBG] Hosting started
+2025-02-06 18:28:54.890 +01:00 [DBG] Connection id "0HNA6QETISCSG" accepted.
+2025-02-06 18:28:54.891 +01:00 [DBG] Connection id "0HNA6QETISCSF" accepted.
+2025-02-06 18:28:54.892 +01:00 [DBG] Connection id "0HNA6QETISCSF" started.
+2025-02-06 18:28:54.892 +01:00 [DBG] Connection id "0HNA6QETISCSG" started.
+2025-02-06 18:28:54.900 +01:00 [DBG] Connection id "0HNA6QETISCSF" received FIN.
+2025-02-06 18:28:54.900 +01:00 [DBG] Connection id "0HNA6QETISCSG" received FIN.
+2025-02-06 18:28:54.910 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:28:54.910 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-06 18:28:54.933 +01:00 [DBG] Connection id "0HNA6QETISCSG" stopped.
+2025-02-06 18:28:54.933 +01:00 [DBG] Connection id "0HNA6QETISCSF" stopped.
+2025-02-06 18:28:54.936 +01:00 [DBG] Connection id "0HNA6QETISCSF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:28:54.936 +01:00 [DBG] Connection id "0HNA6QETISCSG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-06 18:28:55.171 +01:00 [DBG] Connection id "0HNA6QETISCSH" accepted.
+2025-02-06 18:28:55.172 +01:00 [DBG] Connection id "0HNA6QETISCSH" started.
+2025-02-06 18:28:55.202 +01:00 [DBG] Connection 0HNA6QETISCSH established using the following protocol: "Tls13"
+2025-02-06 18:28:55.259 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2025-02-06 18:28:55.338 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-06 18:28:55.355 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-06 18:28:55.356 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:28:55.495 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-02-06 18:28:55.498 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-02-06 18:28:55.517 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-02-06 18:28:55.519 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-02-06 18:28:55.525 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 268.9839ms
+2025-02-06 18:28:55.542 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2025-02-06 18:28:55.547 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.5518ms
+2025-02-06 18:28:55.614 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2025-02-06 18:28:55.660 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.4103ms
+2025-02-06 18:28:55.697 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2025-02-06 18:28:55.698 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-06 18:28:55.699 +01:00 [DBG] Request did not match any endpoints
+2025-02-06 18:28:55.780 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 83.5389ms
+2025-02-06 18:30:05.490 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:30:05.497 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:30:05.498 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:30:05.499 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:30:05.500 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:30:05.523 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:30:05.565 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:30:05.569 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:30:05.575 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:30:05.578 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 87.7012ms
+2025-02-06 18:31:11.437 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:31:11.444 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:31:11.444 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:31:11.445 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:31:11.446 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:31:11.447 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:31:11.448 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:31:11.449 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:31:11.449 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:31:11.450 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 12.7755ms
+2025-02-06 18:31:22.301 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:31:22.302 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:31:22.302 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:31:22.303 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:31:22.304 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:31:22.311 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:31:22.312 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:31:22.313 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:31:22.313 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:31:22.314 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 12.7308ms
+2025-02-06 18:31:31.772 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Curve/list - -
+2025-02-06 18:31:31.773 +01:00 [DBG] 1 candidate(s) found for the request path '/Curve/list'
+2025-02-06 18:31:31.773 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)' with route pattern 'Curve/list' is valid for the request path '/Curve/list'
+2025-02-06 18:31:31.774 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.CurveController.Home (P7CreateRestApi)'
+2025-02-06 18:31:31.775 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-06 18:31:31.777 +01:00 [DBG] AuthenticationScheme: Identity.Application was successfully authenticated.
+2025-02-06 18:31:31.777 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-02-06 18:31:31.778 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-02-06 18:31:31.778 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-02-06 18:31:31.779 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Curve/list - - - 401 0 - 6.8368ms
