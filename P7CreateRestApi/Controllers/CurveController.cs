@@ -21,6 +21,7 @@ namespace Dot.Net.WebApi.Controllers
             _curveRepository = curveRepository;
         }
 
+        [Authorize(Roles = "Admin,SuperRole")]
         [HttpGet]
         [Route("list")]
         public async Task<IActionResult> Home()
