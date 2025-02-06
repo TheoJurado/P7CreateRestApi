@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace Dot.Net.WebApi.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("[controller]")]
     public class RuleNameController : ControllerBase

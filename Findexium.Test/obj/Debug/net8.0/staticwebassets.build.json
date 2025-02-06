@@ -1,0 +1,34 @@
+{
+  "Version": 1,
+  "Hash": "qrHu+0uc4btKEtrdAks51Okj3cXvvKRSw0+9vu/Zoks=",
+  "Source": "Findexium.Test",
+  "BasePath": "_content/Findexium.Test",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "S:\\OC Projects\\P7\\Back-end.NET_API_REST-main\\Back-end.NET_API_REST-main\\P7CreateRestApi\\P7CreateRestApi.csproj",
+      "Version": 2,
+      "Source": "P7CreateRestApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile"
+    },
+    {
+      "Identity": "S:\\OC Projects\\P7\\Back-end.NET_API_REST-main\\Back-end.NET_API_REST-main\\P7CreateRestApi\\P7CreateRestApi.csproj",
+      "Version": 2,
+      "Source": "P7CreateRestApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

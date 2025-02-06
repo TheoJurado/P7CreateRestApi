@@ -6,7 +6,7 @@ using P7CreateRestApi.Repositories;
 
 namespace Dot.Net.WebApi.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("[controller]")]
     public class BidListController : ControllerBase

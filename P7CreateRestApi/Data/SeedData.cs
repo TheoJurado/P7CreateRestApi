@@ -9,7 +9,6 @@ namespace P7CreateRestApi.Data
 {
     public class SeedData
     {
-        //public static void Initialize(IServiceProvider serviceProvider)
         public static async Task Initialize(IServiceProvider serviceProvider)
         {
             using var context = new LocalDbContext(

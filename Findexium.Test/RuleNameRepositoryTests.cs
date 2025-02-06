@@ -18,23 +18,54 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using System.Net;
 using System.Text;
 using Newtonsoft.Json;
+using System.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Findexium.Test
 {
     public class RuleNameRepositoryTests : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly HttpClient _client;
+        private readonly WebApplicationFactory<Program> _factory;
+        //private readonly IJwtTokenService _jwtTokenService;
+        //private readonly IServiceProvider _serviceProvider;
 
         public RuleNameRepositoryTests(WebApplicationFactory<Program> factory)
         {
-            //_client = factory.CreateClient();
+            _factory = factory;
+            _client = factory.CreateClient();
+            //_serviceProvider = factory.Services;
+            //_jwtTokenService = _serviceProvider.GetRequiredService<IJwtTokenService>();
         }
 
         [Fact]
         public async Task ValidateWithAdminAcount_ShouldRetourneOk()
         {
+            using var scope = _factory.Services.CreateScope();
+            var scopedProvider = scope.ServiceProvider;
+
+            var jwtTokenService = scopedProvider.GetRequiredService<IJwtTokenService>();
+
             // Simuler un token JWT pour Admin (exemple simple)
-            var token = "Bearer faketoken"; // Remplace par un vrai token JWT
+            var user = new User
+            {
+                UserName = "User2",
+                Password = "2345Pw!",
+                Role = "Admin",
+                Email = "mail@example.com",
+                FullName = "User2 FullName",
+                EmailConfirmed = true
+            };
+            var userManager = scopedProvider.GetRequiredService<UserManager<User>>();
+            var result = await userManager.CreateAsync(user, "2345Pw!");
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(user, "Admin");
+            }
+
+            var token = jwtTokenService.GenerateJwtToken(user);
 
             var request = new HttpRequestMessage(HttpMethod.Post, "/trade/validate")
             {

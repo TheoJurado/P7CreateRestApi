@@ -9,6 +9,7 @@ S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexiu
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Findexium.Test.exe
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Findexium.Test.deps.json
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Findexium.Test.runtimeconfig.json
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Findexium.Test.dll
@@ -100,6 +101,8 @@ S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexiu
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebSockets.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.CSharp.dll
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
@@ -310,8 +313,6 @@ S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexiu
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
@@ -456,7 +457,17 @@ S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexiu
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.AssemblyInfoInputs.cache
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.AssemblyInfo.cs
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.csproj.CoreCompileInputs.cache
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.MvcApplicationPartsAssemblyInfo.cs
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.MvcApplicationPartsAssemblyInfo.cache
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.sourcelink.json
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets.build.json
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets.development.json
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets\msbuild.Findexium.Test.Microsoft.AspNetCore.StaticWebAssets.props
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets\msbuild.build.Findexium.Test.props
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Findexium.Test.props
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Findexium.Test.props
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\staticwebassets.pack.json
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\scopedcss\bundle\Findexium.Test.styles.css
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexiu.F2283F0F.Up2Date
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.dll
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\refint\Findexium.Test.dll
