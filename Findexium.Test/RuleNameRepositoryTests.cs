@@ -7,11 +7,68 @@ using Dot.Net.WebApi.Repositories;
 using Dot.Net.WebApi.Controllers;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
+using P7CreateRestApi.Repositories;
+using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using Dot.Net.WebApi.Domain;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+using System.Net;
+using System.Text;
+using Newtonsoft.Json;
 
 namespace Findexium.Test
 {
-    public class RuleNameRepositoryTests
+    public class RuleNameRepositoryTests : IClassFixture<WebApplicationFactory<Program>>
     {
+        private readonly HttpClient _client;
+
+        public RuleNameRepositoryTests(WebApplicationFactory<Program> factory)
+        {
+            //_client = factory.CreateClient();
+        }
+
+        [Fact]
+        public async Task ValidateWithAdminAcount_ShouldRetourneOk()
+        {
+            // Simuler un token JWT pour Admin (exemple simple)
+            var token = "Bearer faketoken"; // Remplace par un vrai token JWT
+
+            var request = new HttpRequestMessage(HttpMethod.Post, "/trade/validate")
+            {
+                Headers = { { "Authorization", token } },
+                Content = new StringContent("{ \"TradeId\": 1, \"Description\": \"Test Trade\" }", Encoding.UTF8, "application/json")
+            };
+
+            var response = await _client.SendAsync(request);
+
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task ValidateWithNonAutoriseAcount_Retourne403()
+        {
+            // Arrange : Pas de token ou rôle invalide
+            var tradeTest = new Trade
+            {
+                Account = "AccountTest",
+                BuyQuantity = 111,
+                TradeSecurity = "SecurityTest",
+                TradeStatus = "PendingTest"
+            };
+
+            var jsonContent = new StringContent(JsonConvert.SerializeObject(tradeTest), Encoding.UTF8, "application/json");
+
+            // Act : Appel de l'endpoint sans utilisateur autorisé
+            var response = await _client.PostAsync("/validate", jsonContent);
+
+            // Assert : Doit renvoyer 401 Unauthorized
+            Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
+        }
+
+        //CRUD
         private DbContextOptions<LocalDbContext> CreateSqlDatabaseOptions()
         {
             var options = new DbContextOptionsBuilder<LocalDbContext>()
@@ -21,7 +78,7 @@ namespace Findexium.Test
                 .Options;
             return options;
         }
-
+        
         [Fact]
         public async void AddAndDeletRuleName_ShouldRemoveRuleNameFromDB()
         {
