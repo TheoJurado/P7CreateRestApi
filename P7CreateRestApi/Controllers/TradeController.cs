@@ -3,9 +3,11 @@ using Dot.Net.WebApi.Repositories;
 using P7CreateRestApi.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace Dot.Net.WebApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("api/[controller]")]
     public class TradeController : ControllerBase
@@ -19,13 +21,15 @@ namespace Dot.Net.WebApi.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "Admin,SuperRole")]
         [HttpGet]
         [Route("list")]
         public async Task<IActionResult> Home()
         {
-            _logger.LogDebug("Affichage de tous les trades");
             // TODO: find all Trade, add to model
             var trades = await _tradeRepository.FindAll();
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a consulté la liste des trades.", userName);
 
             return Ok(trades);
         }
@@ -41,6 +45,8 @@ namespace Dot.Net.WebApi.Controllers
             else
             {
                 _tradeRepository.Add(trade);
+                var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+                _logger.LogInformation("L'utilisateur {User} a ajouté un trade : {Trade}", userName, trade.TradeId);
                 return Ok();
             }
         }
@@ -61,7 +67,7 @@ namespace Dot.Net.WebApi.Controllers
 
             //log
             var userName = User.Identity?.Name ?? "Utilisateur inconnu";
-            _logger.LogInformation("L'utilisateur {User} a ajouté un trade : {Trade}", userName, trade.TradeId);
+            _logger.LogInformation("L'utilisateur {User} a validé un trade : {Trade}", userName, trade.TradeId);
 
             var trades = await _tradeRepository.FindAll();
 
@@ -92,6 +98,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("Les informations sont invalides.");
 
             _tradeRepository.Update(id, trade);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a mis à jour un trade : {Trade}", userName, trade.TradeId);
 
             var trades = await _tradeRepository.FindAll();
 
@@ -108,6 +116,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("L'ID est invalide.");
 
             _tradeRepository.Delete(id);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a supprimé un trade : {Trade}", userName, id);
 
             var trades = await _tradeRepository.FindAll();
 

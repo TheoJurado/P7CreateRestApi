@@ -47,11 +47,12 @@ namespace Dot.Net.WebApi.Repositories
             var curveResearch = DbContext.Curves.Find(id);
             if (curveResearch == null)
                 return;
-            if (curve.Id != id)
-                return;
 
-            curveResearch = curve;
-            DbContext.Curves.Update(curveResearch);
+            curve.Id = id; // S'assurer que l'ID reste inchangé
+            var existingEntity = DbContext.RuleNames.Local.FirstOrDefault(e => e.Id == id);
+            DbContext.Entry(existingEntity).State = EntityState.Detached;
+            DbContext.Curves.Update(curve);
+
             DbContext.SaveChanges();
         }
         public void Delete(int id)

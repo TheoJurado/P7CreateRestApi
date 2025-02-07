@@ -47,11 +47,12 @@ namespace Dot.Net.WebApi.Repositories
             var ratingResearch = DbContext.Ratings.Find(id);
             if (ratingResearch == null)
                 return;
-            if (rating.Id != id)
-                return;
 
-            ratingResearch = rating;
-            DbContext.Ratings.Update(ratingResearch);
+            rating.Id = id; // S'assurer que l'ID reste inchangé
+            var existingEntity = DbContext.RuleNames.Local.FirstOrDefault(e => e.Id == id);
+            DbContext.Entry(existingEntity).State = EntityState.Detached;
+            DbContext.Ratings.Update(rating);
+
             DbContext.SaveChanges();
         }
         public void Delete(int id)

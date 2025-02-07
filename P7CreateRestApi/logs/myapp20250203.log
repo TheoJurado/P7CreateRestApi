@@ -1,0 +1,698 @@
+2025-02-03 18:35:57.006 +01:00 [INF] Attempting to migrate database...
+2025-02-03 18:35:57.374 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-02-03 18:35:57.805 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<int>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-02-03 18:35:57.808 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<int>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2025-02-03 18:35:58.014 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:35:58.228 +01:00 [DBG] Migrating using database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:58.234 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:58.942 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:58.950 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-03 18:35:58.957 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (6ms).
+2025-02-03 18:35:58.968 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-03 18:35:58.993 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-03 18:35:58.997 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.003 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.009 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-03 18:35:59.010 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-03 18:35:59.011 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.012 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.014 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-03 18:35:59.031 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-03 18:35:59.032 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.033 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.034 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.139 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.140 +01:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-02-03 18:35:59.140 +01:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-02-03 18:35:59.141 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-03 18:35:59.143 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-03 18:35:59.144 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.144 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.145 +01:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-02-03 18:35:59.146 +01:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-02-03 18:35:59.146 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.147 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.147 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-03 18:35:59.148 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-03 18:35:59.149 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.150 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.161 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:35:59.161 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:35:59.162 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.163 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.164 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-03 18:35:59.170 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-03 18:35:59.174 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:35:59.175 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.176 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.186 +01:00 [INF] No migrations were applied. The database is already up to date.
+2025-02-03 18:35:59.187 +01:00 [INF] Database migration completed. Starting database seeding...
+2025-02-03 18:35:59.272 +01:00 [INF] User profile is available. Using 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-03 18:35:59.282 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:35:59.321 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any()'
+2025-02-03 18:35:59.488 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM AspNetUsers AS a)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-03 18:35:59.518 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:35:59.519 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:35:59.520 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.520 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.521 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-03 18:35:59.525 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-03 18:35:59.527 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:35:59.528 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.528 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.529 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .Any()'
+2025-02-03 18:35:59.531 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Trades AS t)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-03 18:35:59.532 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:35:59.532 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:35:59.533 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.534 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.534 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-03 18:35:59.537 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Trades] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-03 18:35:59.538 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:35:59.539 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.540 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.541 +01:00 [DBG] Compiling query expression: 
+'DbSet<Rating>()
+    .Any()'
+2025-02-03 18:35:59.542 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Ratings AS r)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2025-02-03 18:35:59.544 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:35:59.544 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:35:59.545 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.546 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.546 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-03 18:35:59.549 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Ratings] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-03 18:35:59.550 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:35:59.550 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.551 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:35:59.553 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:35:59.554 +01:00 [INF] Database seeding completed successfully.
+2025-02-03 18:35:59.555 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:35:59.619 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-02-03 18:35:59.660 +01:00 [DBG] Hosting starting
+2025-02-03 18:35:59.662 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-247b0a39-f609-48fc-b6b7-7a33f372eb2e.xml'.
+2025-02-03 18:35:59.674 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-725444c4-37ef-4daf-931e-d4f9619f3a6a.xml'.
+2025-02-03 18:35:59.682 +01:00 [DBG] Reading data from file 'C:\Users\jurad\AppData\Local\ASP.NET\DataProtection-Keys\key-db019ecf-993b-438c-a7c8-067794bbe92c.xml'.
+2025-02-03 18:35:59.692 +01:00 [DBG] Found key {247b0a39-f609-48fc-b6b7-7a33f372eb2e}.
+2025-02-03 18:35:59.695 +01:00 [DBG] Found key {725444c4-37ef-4daf-931e-d4f9619f3a6a}.
+2025-02-03 18:35:59.695 +01:00 [DBG] Found key {db019ecf-993b-438c-a7c8-067794bbe92c}.
+2025-02-03 18:35:59.701 +01:00 [DBG] Considering key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} with expiration date 2025-04-22 15:40:52Z as default key.
+2025-02-03 18:35:59.703 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-03 18:35:59.704 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-02-03 18:35:59.705 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-03 18:35:59.707 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-02-03 18:35:59.708 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-02-03 18:35:59.711 +01:00 [DBG] Using key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} as the default key.
+2025-02-03 18:35:59.711 +01:00 [DBG] Key ring with default key {247b0a39-f609-48fc-b6b7-7a33f372eb2e} was loaded during application startup.
+2025-02-03 18:35:59.924 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: A3216B6127E90058C2C66916F8E72F95CC8E8F22)
+2025-02-03 18:35:59.959 +01:00 [INF] Now listening on: https://localhost:7210
+2025-02-03 18:35:59.960 +01:00 [INF] Now listening on: http://localhost:5267
+2025-02-03 18:35:59.960 +01:00 [DBG] Loaded hosting startup assembly P7CreateRestApi
+2025-02-03 18:35:59.961 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-03 18:35:59.961 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-03 18:35:59.961 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-03 18:35:59.962 +01:00 [INF] Hosting environment: Development
+2025-02-03 18:35:59.962 +01:00 [INF] Content root path: S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\P7CreateRestApi\
+2025-02-03 18:35:59.963 +01:00 [DBG] Hosting started
+2025-02-03 18:36:00.287 +01:00 [DBG] Connection id "0HNA4F4SNULB3" accepted.
+2025-02-03 18:36:00.288 +01:00 [DBG] Connection id "0HNA4F4SNULB3" started.
+2025-02-03 18:36:00.292 +01:00 [DBG] Connection id "0HNA4F4SNULB4" accepted.
+2025-02-03 18:36:00.294 +01:00 [DBG] Connection id "0HNA4F4SNULB4" started.
+2025-02-03 18:36:00.297 +01:00 [DBG] Connection id "0HNA4F4SNULB4" received FIN.
+2025-02-03 18:36:00.297 +01:00 [DBG] Connection id "0HNA4F4SNULB3" received FIN.
+2025-02-03 18:36:00.306 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-03 18:36:00.328 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-02-03 18:36:00.359 +01:00 [DBG] Connection id "0HNA4F4SNULB4" stopped.
+2025-02-03 18:36:00.359 +01:00 [DBG] Connection id "0HNA4F4SNULB3" stopped.
+2025-02-03 18:36:00.362 +01:00 [DBG] Connection id "0HNA4F4SNULB4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-03 18:36:00.362 +01:00 [DBG] Connection id "0HNA4F4SNULB3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-03 18:36:00.775 +01:00 [DBG] Connection id "0HNA4F4SNULB5" accepted.
+2025-02-03 18:36:00.776 +01:00 [DBG] Connection id "0HNA4F4SNULB5" started.
+2025-02-03 18:36:00.812 +01:00 [DBG] Connection 0HNA4F4SNULB5 established using the following protocol: "Tls13"
+2025-02-03 18:36:00.871 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/index.html - -
+2025-02-03 18:36:00.984 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-02-03 18:36:01.003 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-02-03 18:36:01.004 +01:00 [DBG] Request did not match any endpoints
+2025-02-03 18:36:01.142 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-02-03 18:36:01.145 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-02-03 18:36:01.159 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-02-03 18:36:01.160 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-02-03 18:36:01.165 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/index.html - - - 200 - text/html;charset=utf-8 297.2847ms
+2025-02-03 18:36:01.219 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - -
+2025-02-03 18:36:01.219 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/_vs/browserLink - -
+2025-02-03 18:36:01.223 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_framework/aspnetcore-browser-refresh.js - - - 200 13766 application/javascript;+charset=utf-8 4.2105ms
+2025-02-03 18:36:01.307 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.8074ms
+2025-02-03 18:36:01.525 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - -
+2025-02-03 18:36:01.527 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-03 18:36:01.528 +01:00 [DBG] Request did not match any endpoints
+2025-02-03 18:36:01.615 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 89.9177ms
+2025-02-03 18:36:08.152 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/User/list - -
+2025-02-03 18:36:08.157 +01:00 [DBG] 1 candidate(s) found for the request path '/User/list'
+2025-02-03 18:36:08.158 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.UserController.Home (P7CreateRestApi)' with route pattern 'User/list' is valid for the request path '/User/list'
+2025-02-03 18:36:08.159 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.UserController.Home (P7CreateRestApi)'
+2025-02-03 18:36:08.166 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:08.201 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:36:08.215 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:08.216 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.UserController.Home (P7CreateRestApi)'
+2025-02-03 18:36:08.314 +01:00 [INF] Route matched with {action = "Home", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Home() on controller Dot.Net.WebApi.Controllers.UserController (P7CreateRestApi).
+2025-02-03 18:36:08.316 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-03 18:36:08.316 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-03 18:36:08.317 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-03 18:36:08.318 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-03 18:36:08.319 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-03 18:36:08.320 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.UserController (P7CreateRestApi)
+2025-02-03 18:36:08.321 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.UserController (P7CreateRestApi)
+2025-02-03 18:36:08.368 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:36:08.371 +01:00 [DBG] Compiling query expression: 
+'DbSet<User>()'
+2025-02-03 18:36:08.426 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.AccessFailedCount (int) Required, 1], [Property: User.ConcurrencyStamp (string) Concurrency, 2], [Property: User.Email (string) MaxLength(256), 3], [Property: User.EmailConfirmed (bool) Required, 4], [Property: User.FullName (string) Required, 5], [Property: User.LockoutEnabled (bool) Required, 6], [Property: User.LockoutEnd (DateTimeOffset?), 7], [Property: User.NormalizedEmail (string) Index MaxLength(256), 8], [Property: User.NormalizedUserName (string) Index MaxLength(256), 9], [Property: User.Password (string) Required, 10], [Property: User.PasswordHash (string), 11], [Property: User.PhoneNumber (string), 12], [Property: User.PhoneNumberConfirmed (bool) Required, 13], [Property: User.Role (string) Required, 14], [Property: User.SecurityStamp (string), 15], [Property: User.TwoFactorEnabled (bool) Required, 16], [Property: User.UserName (string) MaxLength(256), 17] }
+        SELECT a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.FullName, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.Password, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.Role, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+        FROM AspNetUsers AS a), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-03 18:36:08.439 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:08.440 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:08.445 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:08.449 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:08.450 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2025-02-03 18:36:08.483 +01:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[Password], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[Role], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2025-02-03 18:36:08.554 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:08.586 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:08.586 +01:00 [DBG] Context 'LocalDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:08.604 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:08.624 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:08.625 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:08.629 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-03 18:36:08.632 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-03 18:36:08.633 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-03 18:36:08.633 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-03 18:36:08.634 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-03 18:36:08.635 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dot.Net.WebApi.Domain.User, P7CreateRestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-03 18:36:08.672 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.UserController.Home (P7CreateRestApi) in 349.3651ms
+2025-02-03 18:36:08.674 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.UserController.Home (P7CreateRestApi)'
+2025-02-03 18:36:08.678 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:36:08.680 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/User/list - - - 200 - application/json;+charset=utf-8 528.2119ms
+2025-02-03 18:36:16.129 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/api/Trade/list - -
+2025-02-03 18:36:16.130 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Trade/list'
+2025-02-03 18:36:16.131 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.TradeController.Home (P7CreateRestApi)' with route pattern 'api/Trade/list' is valid for the request path '/api/Trade/list'
+2025-02-03 18:36:16.133 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.TradeController.Home (P7CreateRestApi)'
+2025-02-03 18:36:16.134 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:16.135 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:36:16.136 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:16.136 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.TradeController.Home (P7CreateRestApi)'
+2025-02-03 18:36:16.140 +01:00 [INF] Route matched with {action = "Home", controller = "Trade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Home() on controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi).
+2025-02-03 18:36:16.141 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-03 18:36:16.141 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-03 18:36:16.142 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-03 18:36:16.143 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-03 18:36:16.144 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-03 18:36:16.144 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:16.145 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:16.147 +01:00 [DBG] Affichage de tous les trades
+2025-02-03 18:36:16.148 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:36:16.149 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()'
+2025-02-03 18:36:16.152 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Trade>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Trade.TradeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Trade.Account (string) Required, 1], [Property: Trade.AccountType (string) Required, 2], [Property: Trade.Benchmark (string) Required, 3], [Property: Trade.Book (string) Required, 4], [Property: Trade.BuyPrice (double?), 5], [Property: Trade.BuyQuantity (double?), 6], [Property: Trade.CreationDate (DateTime?), 7], [Property: Trade.CreationName (string) Required, 8], [Property: Trade.DealName (string) Required, 9], [Property: Trade.DealType (string) Required, 10], [Property: Trade.RevisionDate (DateTime?), 11], [Property: Trade.RevisionName (string) Required, 12], [Property: Trade.SellPrice (double?), 13], [Property: Trade.SellQuantity (double?), 14], [Property: Trade.Side (string) Required, 15], [Property: Trade.SourceListId (string) Required, 16], [Property: Trade.TradeDate (DateTime?), 17], [Property: Trade.TradeSecurity (string) Required, 18], [Property: Trade.TradeStatus (string) Required, 19], [Property: Trade.Trader (string) Required, 20] }
+        SELECT t.TradeId, t.Account, t.AccountType, t.Benchmark, t.Book, t.BuyPrice, t.BuyQuantity, t.CreationDate, t.CreationName, t.DealName, t.DealType, t.RevisionDate, t.RevisionName, t.SellPrice, t.SellQuantity, t.Side, t.SourceListId, t.TradeDate, t.TradeSecurity, t.TradeStatus, t.Trader
+        FROM Trades AS t), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Trade>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)'
+2025-02-03 18:36:16.154 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:16.154 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:16.155 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:16.156 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:16.156 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:16.160 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:16.165 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:16.190 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:16.191 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:16.191 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:16.192 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:16.193 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:16.194 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:16.194 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:16.195 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:16.195 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-03 18:36:16.196 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-03 18:36:16.197 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-03 18:36:16.197 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-03 18:36:16.198 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-03 18:36:16.198 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dot.Net.WebApi.Domain.Trade, P7CreateRestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-03 18:36:16.221 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.TradeController.Home (P7CreateRestApi) in 76.1989ms
+2025-02-03 18:36:16.222 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.TradeController.Home (P7CreateRestApi)'
+2025-02-03 18:36:16.222 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:36:16.223 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/api/Trade/list - - - 200 - application/json;+charset=utf-8 93.4913ms
+2025-02-03 18:36:42.715 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:7210/api/Trade/6 - -
+2025-02-03 18:36:42.721 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Trade/6'
+2025-02-03 18:36:42.721 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)' with route pattern 'api/Trade/{id}' is valid for the request path '/api/Trade/6'
+2025-02-03 18:36:42.722 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:42.723 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:42.724 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:36:42.725 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:42.725 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:42.753 +01:00 [INF] Route matched with {action = "DeleteTrade", controller = "Trade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTrade(Int32) on controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi).
+2025-02-03 18:36:42.754 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-03 18:36:42.755 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-03 18:36:42.755 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-03 18:36:42.756 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-03 18:36:42.757 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-03 18:36:42.757 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:42.758 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:42.787 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-02-03 18:36:42.789 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-02-03 18:36:42.797 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:42.798 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:42.798 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-02-03 18:36:42.811 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:42.814 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:36:42.842 +01:00 [DBG] Compiling query expression: 
+'DbSet<Trade>()
+    .FirstOrDefault(e => EF.Property<int>(e, "TradeId") == __p_0)'
+2025-02-03 18:36:42.889 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Trade>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Trade.TradeId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Trade.Account (string) Required, 1], [Property: Trade.AccountType (string) Required, 2], [Property: Trade.Benchmark (string) Required, 3], [Property: Trade.Book (string) Required, 4], [Property: Trade.BuyPrice (double?), 5], [Property: Trade.BuyQuantity (double?), 6], [Property: Trade.CreationDate (DateTime?), 7], [Property: Trade.CreationName (string) Required, 8], [Property: Trade.DealName (string) Required, 9], [Property: Trade.DealType (string) Required, 10], [Property: Trade.RevisionDate (DateTime?), 11], [Property: Trade.RevisionName (string) Required, 12], [Property: Trade.SellPrice (double?), 13], [Property: Trade.SellQuantity (double?), 14], [Property: Trade.Side (string) Required, 15], [Property: Trade.SourceListId (string) Required, 16], [Property: Trade.TradeDate (DateTime?), 17], [Property: Trade.TradeSecurity (string) Required, 18], [Property: Trade.TradeStatus (string) Required, 19], [Property: Trade.Trader (string) Required, 20] }
+        SELECT TOP(1) t.TradeId, t.Account, t.AccountType, t.Benchmark, t.Book, t.BuyPrice, t.BuyQuantity, t.CreationDate, t.CreationName, t.DealName, t.DealType, t.RevisionDate, t.RevisionName, t.SellPrice, t.SellQuantity, t.Side, t.SourceListId, t.TradeDate, t.TradeSecurity, t.TradeStatus, t.Trader
+        FROM Trades AS t
+        WHERE t.TradeId == @__p_0), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Trade>, 
+    Dot.Net.WebApi.Data.LocalDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2025-02-03 18:36:42.896 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:42.897 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:42.900 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:42.901 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:42.913 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+WHERE [t].[TradeId] = @__p_0
+2025-02-03 18:36:42.938 +01:00 [INF] Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+WHERE [t].[TradeId] = @__p_0
+2025-02-03 18:36:42.939 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:42.941 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:42.941 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:42.942 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:42.952 +01:00 [DBG] An entity of type 'Trade' tracked by 'LocalDbContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:42.957 +01:00 [DBG] SaveChanges starting for 'LocalDbContext'.
+2025-02-03 18:36:42.959 +01:00 [DBG] DetectChanges starting for 'LocalDbContext'.
+2025-02-03 18:36:42.975 +01:00 [DBG] DetectChanges completed for 'LocalDbContext'.
+2025-02-03 18:36:42.981 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:42.982 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:42.984 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-02-03 18:36:42.993 +01:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-02-03 18:36:43.024 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:43.024 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:43.025 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Trades]
+WHERE [TradeId] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-03 18:36:43.032 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Trades]
+WHERE [TradeId] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-03 18:36:43.034 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:43.037 +01:00 [DBG] Committing transaction.
+2025-02-03 18:36:43.040 +01:00 [DBG] Committed transaction.
+2025-02-03 18:36:43.042 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:43.042 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:43.044 +01:00 [DBG] Disposing transaction.
+2025-02-03 18:36:43.049 +01:00 [DBG] An entity of type 'Trade' tracked by 'LocalDbContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:43.051 +01:00 [DBG] SaveChanges completed for 'LocalDbContext' with 1 entities written to the database.
+2025-02-03 18:36:43.052 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:43.053 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:43.054 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:43.054 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:43.055 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:43.057 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:43.059 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:43.059 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:43.060 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:43.061 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:43.061 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:43.062 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:43.062 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:43.063 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:43.064 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-03 18:36:43.065 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-03 18:36:43.066 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-03 18:36:43.066 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-03 18:36:43.066 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-03 18:36:43.067 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dot.Net.WebApi.Domain.Trade, P7CreateRestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-03 18:36:43.068 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi) in 310.3204ms
+2025-02-03 18:36:43.070 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:43.071 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:36:43.072 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:7210/api/Trade/6 - - - 200 - application/json;+charset=utf-8 356.3201ms
+2025-02-03 18:36:46.266 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:7210/api/Trade/7 - -
+2025-02-03 18:36:46.266 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Trade/7'
+2025-02-03 18:36:46.267 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)' with route pattern 'api/Trade/{id}' is valid for the request path '/api/Trade/7'
+2025-02-03 18:36:46.268 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:46.268 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:46.269 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:36:46.269 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:46.272 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:46.273 +01:00 [INF] Route matched with {action = "DeleteTrade", controller = "Trade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTrade(Int32) on controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi).
+2025-02-03 18:36:46.274 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-03 18:36:46.275 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-03 18:36:46.275 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-03 18:36:46.276 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-03 18:36:46.277 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-03 18:36:46.278 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:46.280 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:46.281 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-02-03 18:36:46.281 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-02-03 18:36:46.282 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:46.283 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:46.283 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-02-03 18:36:46.284 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:46.285 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:36:46.288 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:46.289 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:46.289 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.290 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.291 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+WHERE [t].[TradeId] = @__p_0
+2025-02-03 18:36:46.292 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+WHERE [t].[TradeId] = @__p_0
+2025-02-03 18:36:46.293 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.294 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:46.294 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.295 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.295 +01:00 [DBG] An entity of type 'Trade' tracked by 'LocalDbContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.296 +01:00 [DBG] SaveChanges starting for 'LocalDbContext'.
+2025-02-03 18:36:46.297 +01:00 [DBG] DetectChanges starting for 'LocalDbContext'.
+2025-02-03 18:36:46.297 +01:00 [DBG] DetectChanges completed for 'LocalDbContext'.
+2025-02-03 18:36:46.298 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.298 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.299 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-02-03 18:36:46.300 +01:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-02-03 18:36:46.300 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:46.301 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:46.301 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Trades]
+WHERE [TradeId] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-03 18:36:46.302 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Trades]
+WHERE [TradeId] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-03 18:36:46.303 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:46.304 +01:00 [DBG] Committing transaction.
+2025-02-03 18:36:46.308 +01:00 [DBG] Committed transaction.
+2025-02-03 18:36:46.309 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.309 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.310 +01:00 [DBG] Disposing transaction.
+2025-02-03 18:36:46.310 +01:00 [DBG] An entity of type 'Trade' tracked by 'LocalDbContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.311 +01:00 [DBG] SaveChanges completed for 'LocalDbContext' with 1 entities written to the database.
+2025-02-03 18:36:46.312 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:46.312 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:46.313 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.314 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.315 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:46.317 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:46.321 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.321 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.322 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.323 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:46.324 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:46.324 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.325 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:46.326 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-03 18:36:46.327 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-03 18:36:46.327 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-03 18:36:46.327 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-03 18:36:46.328 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-03 18:36:46.329 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dot.Net.WebApi.Domain.Trade, P7CreateRestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-03 18:36:46.329 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi) in 51.3714ms
+2025-02-03 18:36:46.330 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:46.331 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:36:46.331 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:7210/api/Trade/7 - - - 200 - application/json;+charset=utf-8 65.2776ms
+2025-02-03 18:36:49.280 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:7210/api/Trade/8 - -
+2025-02-03 18:36:49.280 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Trade/8'
+2025-02-03 18:36:49.281 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)' with route pattern 'api/Trade/{id}' is valid for the request path '/api/Trade/8'
+2025-02-03 18:36:49.282 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:49.282 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:49.283 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:36:49.283 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:36:49.284 +01:00 [INF] Executing endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:49.284 +01:00 [INF] Route matched with {action = "DeleteTrade", controller = "Trade"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTrade(Int32) on controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi).
+2025-02-03 18:36:49.285 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-02-03 18:36:49.286 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-02-03 18:36:49.286 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-02-03 18:36:49.287 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-02-03 18:36:49.288 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-02-03 18:36:49.289 +01:00 [DBG] Executing controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:49.289 +01:00 [DBG] Executed controller factory for controller Dot.Net.WebApi.Controllers.TradeController (P7CreateRestApi)
+2025-02-03 18:36:49.290 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-02-03 18:36:49.291 +01:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-02-03 18:36:49.291 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:49.292 +01:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:49.293 +01:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-02-03 18:36:49.293 +01:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-02-03 18:36:49.294 +01:00 [INF] Entity Framework Core 6.0.16 initialized 'LocalDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.16' with options: None
+2025-02-03 18:36:49.296 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:49.296 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:49.297 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.297 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.298 +01:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+WHERE [t].[TradeId] = @__p_0
+2025-02-03 18:36:49.299 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+WHERE [t].[TradeId] = @__p_0
+2025-02-03 18:36:49.300 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:49.301 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:49.301 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.302 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.302 +01:00 [DBG] An entity of type 'Trade' tracked by 'LocalDbContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:49.303 +01:00 [DBG] SaveChanges starting for 'LocalDbContext'.
+2025-02-03 18:36:49.304 +01:00 [DBG] DetectChanges starting for 'LocalDbContext'.
+2025-02-03 18:36:49.304 +01:00 [DBG] DetectChanges completed for 'LocalDbContext'.
+2025-02-03 18:36:49.305 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.305 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.306 +01:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-02-03 18:36:49.307 +01:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-02-03 18:36:49.307 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:49.308 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:49.308 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Trades]
+WHERE [TradeId] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-03 18:36:49.309 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Trades]
+WHERE [TradeId] = @p0;
+SELECT @@ROWCOUNT;
+2025-02-03 18:36:49.310 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:49.311 +01:00 [DBG] Committing transaction.
+2025-02-03 18:36:49.315 +01:00 [DBG] Committed transaction.
+2025-02-03 18:36:49.316 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.316 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.317 +01:00 [DBG] Disposing transaction.
+2025-02-03 18:36:49.317 +01:00 [DBG] An entity of type 'Trade' tracked by 'LocalDbContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:49.318 +01:00 [DBG] SaveChanges completed for 'LocalDbContext' with 1 entities written to the database.
+2025-02-03 18:36:49.319 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-02-03 18:36:49.319 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-02-03 18:36:49.320 +01:00 [DBG] Opening connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.321 +01:00 [DBG] Opened connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.321 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:49.323 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TradeId], [t].[Account], [t].[AccountType], [t].[Benchmark], [t].[Book], [t].[BuyPrice], [t].[BuyQuantity], [t].[CreationDate], [t].[CreationName], [t].[DealName], [t].[DealType], [t].[RevisionDate], [t].[RevisionName], [t].[SellPrice], [t].[SellQuantity], [t].[Side], [t].[SourceListId], [t].[TradeDate], [t].[TradeSecurity], [t].[TradeStatus], [t].[Trader]
+FROM [Trades] AS [t]
+2025-02-03 18:36:49.325 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:49.325 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:49.326 +01:00 [DBG] Context 'LocalDbContext' started tracking 'Trade' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-02-03 18:36:49.327 +01:00 [DBG] A data reader was disposed.
+2025-02-03 18:36:49.327 +01:00 [DBG] Closing connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.328 +01:00 [DBG] Closed connection to database 'Findexium' on server '.\SQLEXPRESS'.
+2025-02-03 18:36:49.328 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-02-03 18:36:49.329 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-02-03 18:36:49.330 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-02-03 18:36:49.330 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-02-03 18:36:49.331 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-02-03 18:36:49.331 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Dot.Net.WebApi.Domain.Trade, P7CreateRestApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-03 18:36:49.332 +01:00 [INF] Executed action Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi) in 43.441ms
+2025-02-03 18:36:49.333 +01:00 [INF] Executed endpoint 'Dot.Net.WebApi.Controllers.TradeController.DeleteTrade (P7CreateRestApi)'
+2025-02-03 18:36:49.334 +01:00 [DBG] 'LocalDbContext' disposed.
+2025-02-03 18:36:49.334 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:7210/api/Trade/8 - - - 200 - application/json;+charset=utf-8 54.4043ms
+2025-02-03 18:37:00.565 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7210/api/Trade/validate application/json 554
+2025-02-03 18:37:00.566 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Trade/validate'
+2025-02-03 18:37:00.566 +01:00 [DBG] Endpoint 'Dot.Net.WebApi.Controllers.TradeController.Validate (P7CreateRestApi)' with route pattern 'api/Trade/validate' is valid for the request path '/api/Trade/validate'
+2025-02-03 18:37:00.567 +01:00 [DBG] Request matched endpoint 'Dot.Net.WebApi.Controllers.TradeController.Validate (P7CreateRestApi)'
+2025-02-03 18:37:00.568 +01:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-02-03 18:37:00.568 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:37:00.579 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|SuperRole)
+2025-02-03 18:37:00.603 +01:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-02-03 18:37:00.611 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7210/api/Trade/validate application/json 554 - 302 0 - 45.5302ms
+2025-02-03 18:37:00.611 +01:00 [DBG] Connection id "0HNA4F4SNULB5", Request id "0HNA4F4SNULB5:00000013": started reading request body.
+2025-02-03 18:37:00.612 +01:00 [DBG] Connection id "0HNA4F4SNULB5", Request id "0HNA4F4SNULB5:00000013": done reading request body.
+2025-02-03 18:37:00.615 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7210/Account/Login?ReturnUrl=%2Fapi%2FTrade%2Fvalidate - -
+2025-02-03 18:37:00.615 +01:00 [DBG] No candidates found for the request path '/Account/Login'
+2025-02-03 18:37:00.616 +01:00 [DBG] Request did not match any endpoints
+2025-02-03 18:37:00.616 +01:00 [DBG] The request path  does not match the path filter
+2025-02-03 18:37:00.617 +01:00 [DBG] AuthenticationScheme: Identity.Application was not authenticated.
+2025-02-03 18:37:00.617 +01:00 [DBG] The request path  does not match the path filter
+2025-02-03 18:37:00.618 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7210/Account/Login?ReturnUrl=%2Fapi%2FTrade%2Fvalidate - - - 404 0 - 3.3347ms

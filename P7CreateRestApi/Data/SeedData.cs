@@ -9,7 +9,6 @@ namespace P7CreateRestApi.Data
 {
     public class SeedData
     {
-        //public static void Initialize(IServiceProvider serviceProvider)
         public static async Task Initialize(IServiceProvider serviceProvider)
         {
             using var context = new LocalDbContext(
@@ -24,36 +23,6 @@ namespace P7CreateRestApi.Data
                 return;
             }/**/
 
-            /*
-            var passwordHasher = new PasswordHasher<User>();
-            User user1 = new User
-            {
-                UserName = "User1",
-                Password = "1234PW",
-                FullName = "UserFN1",
-                Role = "Role"
-            };
-            user1.PasswordHash = passwordHasher.HashPassword(user1, "1234PW");
-            user1.EmailConfirmed = true;
-            User user2 = new User
-            {
-                UserName = "User2",
-                Password = "2345PW",
-                FullName = "UserFN2",
-                Role = "SuperRole",
-            };
-            user2.PasswordHash = passwordHasher.HashPassword(user2, "2345PW");
-            user2.EmailConfirmed = true;
-            User user3 = new User
-            {
-                UserName = "User3",
-                Password = "3456PW",
-                FullName = "UserFN3",
-                Role = "UnderRole"
-            };
-            user3.PasswordHash = passwordHasher.HashPassword(user3, "3456PW");
-            user3.EmailConfirmed = true;
-            context.Users.AddRange(user1, user2, user3);/**/
 
             var result1 = await roleManager.CreateAsync(new Role { Name = "Admin" });
             var result2 = await roleManager.CreateAsync(new Role { Name = "User" });
@@ -85,15 +54,6 @@ namespace P7CreateRestApi.Data
 
 
 
-            /*Role roleAdmin = new Role("Admin");
-            Role roleUser = new Role("User");
-            context.Roles.AddRange(roleAdmin, roleUser);
-            context.SaveChanges();
-
-            context.UserRoles.AddRange(
-                new IdentityUserRole<int> { RoleId = roleAdmin.Id, UserId = user2.Id }, 
-                new IdentityUserRole<int> { RoleId = roleUser.Id, UserId = user1.Id });
-            context.SaveChanges();/**/
 
             Trade trade1 = new Trade
             {

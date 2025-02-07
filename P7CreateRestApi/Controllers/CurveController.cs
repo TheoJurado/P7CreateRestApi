@@ -1,28 +1,36 @@
 using Dot.Net.WebApi.Controllers.Domain;
 using Dot.Net.WebApi.Domain;
 using Dot.Net.WebApi.Repositories;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using P7CreateRestApi.Repositories;
 
 namespace Dot.Net.WebApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("[controller]")]
     public class CurveController : ControllerBase
     {
         // TODO: Inject Curve Point service
         private ICurvePointRepository _curveRepository;
+        private readonly ILogger<TradeController> _logger;
 
-        public CurveController(ICurvePointRepository curveRepository)
+        public CurveController(ICurvePointRepository curveRepository, ILogger<TradeController> logger)
         {
             _curveRepository = curveRepository;
+            _logger = logger;
         }
 
+        [Authorize(Roles = "Admin,SuperRole")]
         [HttpGet]
         [Route("list")]
         public async Task<IActionResult> Home()
         {
             var curves = await _curveRepository.FindAll();
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a consulté la liste des courbes.", userName);
 
             return Ok(curves);
         }
@@ -38,6 +46,8 @@ namespace Dot.Net.WebApi.Controllers
             else
             {
                 _curveRepository.Add(curvePoint);
+                var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+                _logger.LogInformation("L'utilisateur {User} a ajouté une courbe : {Curve}", userName, curvePoint.Id);
                 return Ok();
             }
         }
@@ -53,6 +63,8 @@ namespace Dot.Net.WebApi.Controllers
             }
 
             _curveRepository.Add(curvePoint);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a validé une courbe : {Curve}", userName, curvePoint.Id);
 
             var curves = await _curveRepository.FindAll();
 
@@ -83,6 +95,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("Les informations sont invalides.");
 
             _curveRepository.Update(id, curvePoint);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a mis à jour une courbe : {Curve}", userName, curvePoint.Id);
 
             var curves = await _curveRepository.FindAll();
 
@@ -99,6 +113,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("L'ID est invalide.");
 
             _curveRepository.Delete(id);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a supprimé une courbe : {Curve}", userName, id);
 
             var curves = await _curveRepository.FindAll();
 

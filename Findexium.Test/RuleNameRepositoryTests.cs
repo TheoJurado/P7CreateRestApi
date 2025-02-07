@@ -7,11 +7,128 @@ using Dot.Net.WebApi.Repositories;
 using Dot.Net.WebApi.Controllers;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Moq;
+using P7CreateRestApi.Repositories;
+using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using Dot.Net.WebApi.Domain;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+using System.Net;
+using System.Text;
+using Newtonsoft.Json;
+using System.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Findexium.Test
 {
-    public class RuleNameRepositoryTests
+    public class RuleNameRepositoryTests : IClassFixture<WebApplicationFactory<Program>>
     {
+        private readonly HttpClient _client;
+        private readonly WebApplicationFactory<Program> _factory;
+        //private readonly IJwtTokenService _jwtTokenService;
+        //private readonly IServiceProvider _serviceProvider;
+
+        public RuleNameRepositoryTests(WebApplicationFactory<Program> factory)
+        {
+            _factory = factory;
+            _client = factory.CreateClient();
+            //_serviceProvider = factory.Services;
+            //_jwtTokenService = _serviceProvider.GetRequiredService<IJwtTokenService>();
+        }
+
+        [Fact]
+        public async Task ValidateWithAdminAcount_ShouldRetourneOk()
+        {
+            // Arrange
+            using var scope = _factory.Services.CreateScope();
+            var scopedProvider = scope.ServiceProvider;
+
+            var jwtTokenService = scopedProvider.GetRequiredService<IJwtTokenService>();
+
+            // Simuler un token JWT pour Admin (exemple simple)
+            var user = new User
+            {
+                UserName = "User2",
+                Password = "2345Pw!",
+                Role = "Admin",
+                Email = "mail@example.com",
+                FullName = "User2 FullName",
+                EmailConfirmed = true
+            };//User Admin
+            var userManager = scopedProvider.GetRequiredService<UserManager<User>>();
+            var result = await userManager.CreateAsync(user, "2345Pw!");
+            if (result.Succeeded)
+                await userManager.AddToRoleAsync(user, "Admin");
+
+            var token = jwtTokenService.GenerateJwtToken(user);
+
+            // Act
+            var request = new HttpRequestMessage(HttpMethod.Get, "/api/trade/list")
+            {
+                Headers = { { "Authorization", "Bearer " + token } }
+            };
+
+            // Assert
+            var response = await _client.SendAsync(request);
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task ValidateWithNonAutoriseAcount_Retourne403()
+        {
+            using var scope = _factory.Services.CreateScope();
+            var scopedProvider = scope.ServiceProvider;
+
+            var jwtTokenService = scopedProvider.GetRequiredService<IJwtTokenService>();
+
+            // Simuler un token JWT pour Admin (exemple simple)
+            var user = new User
+            {
+                UserName = "User1",
+                Password = "1234Pw!",
+                Role = "User",
+                Email = "mail@example.com",
+                FullName = "User1 FullName",
+                EmailConfirmed = true
+            };
+            var userManager = scopedProvider.GetRequiredService<UserManager<User>>();
+            var result = await userManager.CreateAsync(user, "1234Pw!");
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(user, "User");
+            }
+
+            var token = jwtTokenService.GenerateJwtToken(user);
+
+            var request = new HttpRequestMessage(HttpMethod.Get, "/api/trade/list")
+            {
+                Headers = { { "Authorization", "Bearer " + token } }
+            };
+
+            var response = await _client.SendAsync(request);
+
+            // Assert : Doit renvoyer 403 Forbidden
+            Assert.Equal(HttpStatusCode.Forbidden, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task ValidateWithoutAuthentication_ShouldReturn401()
+        {
+            // Arrange : Création d'une requête GET vers l'endpoint sans ajouter d'en-tête d'authentification.
+            var request = new HttpRequestMessage(HttpMethod.Get, "/api/trade/list");
+
+            // Act : Exécution de la requête.
+            var response = await _client.SendAsync(request);
+
+            // Assert : On s'attend à recevoir un code 401 Unauthorized.
+            Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
+        }
+
+        //CRUD
         private DbContextOptions<LocalDbContext> CreateSqlDatabaseOptions()
         {
             var options = new DbContextOptionsBuilder<LocalDbContext>()
@@ -21,7 +138,7 @@ namespace Findexium.Test
                 .Options;
             return options;
         }
-
+        
         [Fact]
         public async void AddAndDeletRuleName_ShouldRemoveRuleNameFromDB()
         {

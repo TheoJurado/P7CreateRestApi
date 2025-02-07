@@ -4,7 +4,6 @@ namespace Dot.Net.WebApi.Domain
 {
     public class CurvePoint
     {
-        // DONE: Map columns in data table CURVEPOINT with corresponding fields
         [Key]
         public int Id { get; set; }
         public byte? CurveId { get; set; }

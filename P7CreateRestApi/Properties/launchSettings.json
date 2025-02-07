@@ -19,6 +19,9 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "testhost": {
+      "commandName": "Project"
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
