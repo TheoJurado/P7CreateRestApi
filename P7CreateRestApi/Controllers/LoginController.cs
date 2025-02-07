@@ -16,9 +16,9 @@ namespace Dot.Net.WebApi.Controllers
         private readonly IJwtTokenService _jwtTokenService;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-        private readonly ILogger<TradeController> _logger;
+        private readonly ILogger<LoginController> _logger;
 
-        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<User> userManager, SignInManager<User> signInManager, ILogger<TradeController> logger)
+        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<User> userManager, SignInManager<User> signInManager, ILogger<LoginController> logger)
         {
             _jwtTokenService = jwtTokenService;
             _userRepository = userRepository;

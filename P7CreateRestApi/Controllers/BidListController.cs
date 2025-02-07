@@ -12,9 +12,9 @@ namespace Dot.Net.WebApi.Controllers
     public class BidListController : ControllerBase
     {
         private IBidListRepository _bidRepository;
-        private readonly ILogger<TradeController> _logger;
+        private readonly ILogger<BidListController> _logger;
 
-        public BidListController(IBidListRepository bidRepository, ILogger<TradeController> logger)
+        public BidListController(IBidListRepository bidRepository, ILogger<BidListController> logger)
         {
             _bidRepository = bidRepository;
             _logger = logger;

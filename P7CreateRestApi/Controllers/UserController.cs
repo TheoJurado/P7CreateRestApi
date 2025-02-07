@@ -17,9 +17,9 @@ namespace Dot.Net.WebApi.Controllers
     public class UserController : ControllerBase
     {
         private IUserRepository _userRepository;
-        private readonly ILogger<TradeController> _logger;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IUserRepository userRepository, ILogger<TradeController> logger)
+        public UserController(IUserRepository userRepository, ILogger<UserController> logger)
         {
             _userRepository = userRepository;
             _logger = logger;

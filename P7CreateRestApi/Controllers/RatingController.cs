@@ -15,9 +15,9 @@ namespace Dot.Net.WebApi.Controllers
     {
         // TODO: Inject Rating service
         private IRatingRepository _ratingRepository;
-        private readonly ILogger<TradeController> _logger;
+        private readonly ILogger<RatingController> _logger;
 
-        public RatingController(IRatingRepository rateRepository, ILogger<TradeController> logger)
+        public RatingController(IRatingRepository rateRepository, ILogger<RatingController> logger)
         {
             _ratingRepository = rateRepository;
             _logger = logger;
