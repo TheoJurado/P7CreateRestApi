@@ -16,13 +16,15 @@ namespace Dot.Net.WebApi.Controllers
         private readonly IJwtTokenService _jwtTokenService;
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private readonly ILogger<TradeController> _logger;
 
-        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<User> userManager, SignInManager<User> signInManager)
+        public LoginController(IJwtTokenService jwtTokenService, IUserRepository userRepository, UserManager<User> userManager, SignInManager<User> signInManager, ILogger<TradeController> logger)
         {
             _jwtTokenService = jwtTokenService;
             _userRepository = userRepository;
             _userManager = userManager;
             _signInManager = signInManager;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -50,6 +52,7 @@ namespace Dot.Net.WebApi.Controllers
 
             // Generate the JWT Token
             var token = _jwtTokenService.GenerateJwtToken(user);
+            _logger.LogInformation("L'utilisateur {User} s'est connecté", user.UserName);
 
             return Ok(new
             {

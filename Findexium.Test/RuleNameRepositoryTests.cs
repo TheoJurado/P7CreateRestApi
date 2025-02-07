@@ -43,6 +43,7 @@ namespace Findexium.Test
         [Fact]
         public async Task ValidateWithAdminAcount_ShouldRetourneOk()
         {
+            // Arrange
             using var scope = _factory.Services.CreateScope();
             var scopedProvider = scope.ServiceProvider;
 
@@ -57,45 +58,73 @@ namespace Findexium.Test
                 Email = "mail@example.com",
                 FullName = "User2 FullName",
                 EmailConfirmed = true
-            };
+            };//User Admin
             var userManager = scopedProvider.GetRequiredService<UserManager<User>>();
             var result = await userManager.CreateAsync(user, "2345Pw!");
             if (result.Succeeded)
-            {
                 await userManager.AddToRoleAsync(user, "Admin");
-            }
 
             var token = jwtTokenService.GenerateJwtToken(user);
 
-            var request = new HttpRequestMessage(HttpMethod.Post, "/trade/validate")
+            // Act
+            var request = new HttpRequestMessage(HttpMethod.Get, "/api/trade/list")
             {
-                Headers = { { "Authorization", token } },
-                Content = new StringContent("{ \"TradeId\": 1, \"Description\": \"Test Trade\" }", Encoding.UTF8, "application/json")
+                Headers = { { "Authorization", "Bearer " + token } }
             };
 
+            // Assert
             var response = await _client.SendAsync(request);
-
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
 
         [Fact]
         public async Task ValidateWithNonAutoriseAcount_Retourne403()
         {
-            // Arrange : Pas de token ou rôle invalide
-            var tradeTest = new Trade
+            using var scope = _factory.Services.CreateScope();
+            var scopedProvider = scope.ServiceProvider;
+
+            var jwtTokenService = scopedProvider.GetRequiredService<IJwtTokenService>();
+
+            // Simuler un token JWT pour Admin (exemple simple)
+            var user = new User
             {
-                Account = "AccountTest",
-                BuyQuantity = 111,
-                TradeSecurity = "SecurityTest",
-                TradeStatus = "PendingTest"
+                UserName = "User1",
+                Password = "1234Pw!",
+                Role = "User",
+                Email = "mail@example.com",
+                FullName = "User1 FullName",
+                EmailConfirmed = true
+            };
+            var userManager = scopedProvider.GetRequiredService<UserManager<User>>();
+            var result = await userManager.CreateAsync(user, "1234Pw!");
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(user, "User");
+            }
+
+            var token = jwtTokenService.GenerateJwtToken(user);
+
+            var request = new HttpRequestMessage(HttpMethod.Get, "/api/trade/list")
+            {
+                Headers = { { "Authorization", "Bearer " + token } }
             };
 
-            var jsonContent = new StringContent(JsonConvert.SerializeObject(tradeTest), Encoding.UTF8, "application/json");
+            var response = await _client.SendAsync(request);
 
-            // Act : Appel de l'endpoint sans utilisateur autorisé
-            var response = await _client.PostAsync("/validate", jsonContent);
+            // Assert : Doit renvoyer 403 Forbidden
+            Assert.Equal(HttpStatusCode.Forbidden, response.StatusCode);
+        }
 
-            // Assert : Doit renvoyer 401 Unauthorized
+        [Fact]
+        public async Task ValidateWithoutAuthentication_ShouldReturn401()
+        {
+            // Arrange : Création d'une requête GET vers l'endpoint sans ajouter d'en-tête d'authentification.
+            var request = new HttpRequestMessage(HttpMethod.Get, "/api/trade/list");
+
+            // Act : Exécution de la requête.
+            var response = await _client.SendAsync(request);
+
+            // Assert : On s'attend à recevoir un code 401 Unauthorized.
             Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
         }
 

@@ -15,10 +15,12 @@ namespace Dot.Net.WebApi.Controllers
     {
         // TODO: Inject Rating service
         private IRatingRepository _ratingRepository;
+        private readonly ILogger<TradeController> _logger;
 
-        public RatingController(IRatingRepository rateRepository)
+        public RatingController(IRatingRepository rateRepository, ILogger<TradeController> logger)
         {
             _ratingRepository = rateRepository;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -27,6 +29,8 @@ namespace Dot.Net.WebApi.Controllers
         {
             // TODO: find all Rating, add to model
             var rates = await _ratingRepository.FindAll();
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a consulté la liste des notations.", userName);
 
             return Ok(rates);
         }
@@ -42,6 +46,8 @@ namespace Dot.Net.WebApi.Controllers
             else
             {
                 _ratingRepository.Add(rating);
+                var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+                _logger.LogInformation("L'utilisateur {User} a ajouté une notation : {Rating}", userName, rating.Id);
                 return Ok();
             }
         }
@@ -57,6 +63,8 @@ namespace Dot.Net.WebApi.Controllers
             }
 
             _ratingRepository.Add(rating);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a validé une notation : {Rating}", userName, rating.Id);
 
             var rates = await _ratingRepository.FindAll();
 
@@ -87,6 +95,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("Les informations sont invalides.");
 
             _ratingRepository.Update(id, rating);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a mis à jour une notation : {Rating}", userName, rating.Id);
 
             var rates = await _ratingRepository.FindAll();
 
@@ -103,6 +113,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("L'ID est invalide.");
 
             _ratingRepository.Delete(id);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a supprimé une notation : {Rating}", userName, id);
 
             var rates = await _ratingRepository.FindAll();
 

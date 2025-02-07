@@ -17,16 +17,21 @@ namespace Dot.Net.WebApi.Controllers
     public class UserController : ControllerBase
     {
         private IUserRepository _userRepository;
+        private readonly ILogger<TradeController> _logger;
 
-        public UserController(IUserRepository userRepository)
+        public UserController(IUserRepository userRepository, ILogger<TradeController> logger)
         {
             _userRepository = userRepository;
+            _logger = logger;
         }
 
         [HttpGet]
         [Route("list")]
         public async Task<IActionResult> Home()
         {
+            //log
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a consulté la liste des utilisateurs", userName);
             var users = await _userRepository.FindAll();
 
             return Ok(users);
@@ -36,13 +41,17 @@ namespace Dot.Net.WebApi.Controllers
         [Route("add")]
         public IActionResult AddUser([FromBody] User user)
         {
+            //log
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
             if (user == null || string.IsNullOrEmpty(user.UserName) || string.IsNullOrEmpty(user.Password))
             {
+                _logger.LogInformation("L'utilisateur {User} a échoué a ajouter un utilisateur", userName);
                 return BadRequest("Les informations utilisateur sont invalides.");
             }
             else
             {
                 _userRepository.Add(user);
+                _logger.LogInformation("L'utilisateur {User} a ajouté un utilisateur : {NewUser}", userName, user.Id);
                 return Ok();
             }
         }
@@ -51,16 +60,13 @@ namespace Dot.Net.WebApi.Controllers
         [Route("validate")]
         public async Task<IActionResult> Validate([FromBody] UserViewModel user)
         {
+            //log
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
             if (!ModelState.IsValid)
             {
+                _logger.LogInformation("L'utilisateur {User} a échoué a valider un utilisateur", userName);
                 return BadRequest("Model invalide");
             }
-            /*
-            if (!user.Password.Contains("h"))
-            {
-                ModelState.AddModelError(nameof(user.Password),"pas de H");
-                return BadRequest(ModelState);
-            }/**/
             
             _userRepository.Add(new User
             {
@@ -68,8 +74,8 @@ namespace Dot.Net.WebApi.Controllers
                 Password = user.Password,
                 FullName = user.FullName,
                 Role = user.Role
-            });/**/
-            /*_userRepository.Add(user);/**/
+            });
+            _logger.LogInformation("L'utilisateur {User} a validé un utilisateur : {NewUser}", userName, user.FullName);
 
             var users = await _userRepository.FindAll();
 
@@ -92,6 +98,9 @@ namespace Dot.Net.WebApi.Controllers
         [Route("update/{id}")]
         public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
         {
+            //log
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+
             User? userResearch = _userRepository.FindById(id);
             if (userResearch == null)
                 return BadRequest("L'ID utilisateur est invalide.");
@@ -99,7 +108,7 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("Les informations utilisateur sont invalides.");
 
             _userRepository.Update(id, user);
-
+            _logger.LogInformation("L'utilisateur {User} a mis à jour un utilisateur : {NewUser}", userName, user.Id);
             var users = await _userRepository.FindAll();
 
             return Ok(users);
@@ -109,11 +118,15 @@ namespace Dot.Net.WebApi.Controllers
         [Route("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
+            //log
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+
             User? userResearch = _userRepository.FindById(id);
             if (userResearch == null)
                 return BadRequest("L'ID utilisateur est invalide.");
 
             _userRepository.Delete(id);
+            _logger.LogInformation("L'utilisateur {User} a supprimé un utilisateur : {OldUser}", userName, id);
 
             var users = await _userRepository.FindAll();
 

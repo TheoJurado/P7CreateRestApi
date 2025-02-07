@@ -12,10 +12,12 @@ namespace Dot.Net.WebApi.Controllers
     public class BidListController : ControllerBase
     {
         private IBidListRepository _bidRepository;
+        private readonly ILogger<TradeController> _logger;
 
-        public BidListController(IBidListRepository bidRepository)
+        public BidListController(IBidListRepository bidRepository, ILogger<TradeController> logger)
         {
             _bidRepository = bidRepository;
+            _logger = logger;
         }
 
 
@@ -30,6 +32,8 @@ namespace Dot.Net.WebApi.Controllers
             }
 
             _bidRepository.Add(bidList);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a validé une offre : {Bid}", userName, bidList.BidListId);
 
             var bids = await _bidRepository.FindAll();
 
@@ -59,6 +63,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("Les informations sont invalides.");
 
             _bidRepository.Update(id, bidList);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a mis à jour une offre : {Bid}", userName, bidList.BidListId);
 
             var bids = await _bidRepository.FindAll();
 
@@ -74,6 +80,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("L'ID est invalide.");
 
             _bidRepository.Delete(id);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a supprimé une offre : {Bid}", userName, id);
 
             var bids = await _bidRepository.FindAll();
 

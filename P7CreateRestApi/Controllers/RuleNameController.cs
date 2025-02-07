@@ -14,10 +14,12 @@ namespace Dot.Net.WebApi.Controllers
     public class RuleNameController : ControllerBase
     {
         private IRuleNameRepository _ruleNameRepository;
+        private readonly ILogger<TradeController> _logger;
 
-        public RuleNameController(IRuleNameRepository ruleRepository)
+        public RuleNameController(IRuleNameRepository ruleRepository, ILogger<TradeController> logger)
         {
             _ruleNameRepository = ruleRepository;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -26,6 +28,8 @@ namespace Dot.Net.WebApi.Controllers
         {
             // TODO: find all RuleName, add to model
             var rules = await _ruleNameRepository.FindAll();
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a consulté la liste des règles.", userName);
 
             return Ok(rules);
         }
@@ -41,6 +45,8 @@ namespace Dot.Net.WebApi.Controllers
             else
             {
                 _ruleNameRepository.Add(rule);
+                var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+                _logger.LogInformation("L'utilisateur {User} a ajouté une règle : {Rule}", userName, rule.Id);
                 return Ok();
             }
         }
@@ -56,6 +62,9 @@ namespace Dot.Net.WebApi.Controllers
             }
 
             _ruleNameRepository.Add(rule);
+
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a validé une règle : {Rule}", userName, rule.Id);
 
             var rules = await _ruleNameRepository.FindAll();
 
@@ -86,6 +95,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("Les informations sont invalides.");
 
             _ruleNameRepository.Update(id, rule);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a mis à jour une règle : {Rule}", userName, rule.Id);
 
             var rules = await _ruleNameRepository.FindAll();
 
@@ -102,6 +113,8 @@ namespace Dot.Net.WebApi.Controllers
                 return BadRequest("L'ID est invalide.");
 
             _ruleNameRepository.Delete(id);
+            var userName = User.Identity?.Name ?? "Utilisateur inconnu";
+            _logger.LogInformation("L'utilisateur {User} a supprimé une règle : {Rule}", userName, id);
 
             var rules = await _ruleNameRepository.FindAll();
 
