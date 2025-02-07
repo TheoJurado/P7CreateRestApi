@@ -15,9 +15,9 @@ namespace Dot.Net.WebApi.Controllers
     {
         // TODO: Inject Curve Point service
         private ICurvePointRepository _curveRepository;
-        private readonly ILogger<TradeController> _logger;
+        private readonly ILogger<CurveController> _logger;
 
-        public CurveController(ICurvePointRepository curveRepository, ILogger<TradeController> logger)
+        public CurveController(ICurvePointRepository curveRepository, ILogger<CurveController> logger)
         {
             _curveRepository = curveRepository;
             _logger = logger;

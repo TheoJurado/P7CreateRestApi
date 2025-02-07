@@ -14,9 +14,9 @@ namespace Dot.Net.WebApi.Controllers
     public class RuleNameController : ControllerBase
     {
         private IRuleNameRepository _ruleNameRepository;
-        private readonly ILogger<TradeController> _logger;
+        private readonly ILogger<RuleNameController> _logger;
 
-        public RuleNameController(IRuleNameRepository ruleRepository, ILogger<TradeController> logger)
+        public RuleNameController(IRuleNameRepository ruleRepository, ILogger<RuleNameController> logger)
         {
             _ruleNameRepository = ruleRepository;
             _logger = logger;

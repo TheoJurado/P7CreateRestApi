@@ -29,15 +29,11 @@ namespace Findexium.Test
     {
         private readonly HttpClient _client;
         private readonly WebApplicationFactory<Program> _factory;
-        //private readonly IJwtTokenService _jwtTokenService;
-        //private readonly IServiceProvider _serviceProvider;
 
         public RuleNameRepositoryTests(WebApplicationFactory<Program> factory)
         {
             _factory = factory;
             _client = factory.CreateClient();
-            //_serviceProvider = factory.Services;
-            //_jwtTokenService = _serviceProvider.GetRequiredService<IJwtTokenService>();
         }
 
         [Fact]
@@ -138,7 +134,7 @@ namespace Findexium.Test
                 .Options;
             return options;
         }
-        
+
         [Fact]
         public async void AddAndDeletRuleName_ShouldRemoveRuleNameFromDB()
         {
@@ -280,8 +276,20 @@ namespace Findexium.Test
             LocalDbContext _context = new LocalDbContext(options);
             _context.Database.EnsureDeleted();//delete data base befor creat if to make sure it was clear
             _context.Database.EnsureCreated();//creat database
+
+            var mockLogger = new Mock<ILogger<RuleNameController>>();//mock
             var _ruleNameService = new RuleNameRepository(_context);
-            var _controller = new RuleNameController(_ruleNameService);
+            var _controller = new RuleNameController(_ruleNameService, mockLogger.Object);
+
+            //User
+            var user = new ClaimsPrincipal(new ClaimsIdentity(new Claim[]
+            {
+                new Claim(ClaimTypes.Name, "TestUser")
+            }, "mock"));
+            _controller.ControllerContext = new ControllerContext
+            {
+                HttpContext = new DefaultHttpContext { User = user }
+            };
 
             var rule = new RuleName
             {
