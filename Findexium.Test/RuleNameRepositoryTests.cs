@@ -29,15 +29,11 @@ namespace Findexium.Test
     {
         private readonly HttpClient _client;
         private readonly WebApplicationFactory<Program> _factory;
-        //private readonly IJwtTokenService _jwtTokenService;
-        //private readonly IServiceProvider _serviceProvider;
 
         public RuleNameRepositoryTests(WebApplicationFactory<Program> factory)
         {
             _factory = factory;
             _client = factory.CreateClient();
-            //_serviceProvider = factory.Services;
-            //_jwtTokenService = _serviceProvider.GetRequiredService<IJwtTokenService>();
         }
 
         [Fact]

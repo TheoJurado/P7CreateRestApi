@@ -474,3 +474,4 @@ S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexiu
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.pdb
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\Findexium.Test.genruntimeconfig.cache
 S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\obj\Debug\net8.0\ref\Findexium.Test.dll
+S:\OC Projects\P7\Back-end.NET_API_REST-main\Back-end.NET_API_REST-main\Findexium.Test\bin\Debug\net8.0\coverage.json
